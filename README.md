@@ -8,9 +8,16 @@
 
 # Table of Contents
 - [Problem Statement and Requirements](#Problem-Statement-and-Requirements)
-
-
-# Problem Statement and Requirements
+- [UML Use Case Diagram](#uml-use-case-diagram)
+- [UML Domain Model](#uml-domain-model)
+- [UML Class Diagram](#uml-class-diagram)
+- [Sequence Diagrams](#sequence-diagrams)
+- [State Diagram](#state-diagram)
+- [Swimlane Diagram](#swimlane-diagram)
+- [UML Component Diagram](#uml-component-diagram)
+- [Cloud Deployment Diagram](#cloud-deployment-diagram)
+- [Skeleton Classes and Tables Definition](#skeleton-classes-and-tables-definition)
+- [Design Patterns](#design-patterns)
 
 
 # UML Use Case Diagram
