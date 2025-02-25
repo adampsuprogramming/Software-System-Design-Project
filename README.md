@@ -82,15 +82,6 @@ Please click on above image for a full size version
 ![State Diagram](/Images/State_Machine.png)
 Please click on above image for a full size version
 
-# State Diagram
-
-## Introduction
-
-## Diagram
-
-![State Diagram](/Images/State_Machine.png)
-Please click on above image for a full size version
-
 # Swimlane Diagram
 
 ## Introduction
