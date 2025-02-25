@@ -17,5 +17,6 @@
 
 ## Diagram
 
-
+![Use Case Diagram](../Images/use-case-diagram.png)
+Please click on above image for a full size version
 
