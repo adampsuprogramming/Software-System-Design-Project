@@ -44,25 +44,88 @@ Please click on above image for a full size version
 
 ## Diagrams
 
-# Sequence Diagram 1
+### Sequence Diagram 1
 
 ![SD Acc Report](/Images/Sequence_Diagrams-AccReport.png)
 Please click on above image for a full size version
 
-# Sequence Diagram 2
+#### Sequence Diagram 2
 
 ![SD Dashboard](/Images/Sequence_Diagrams-Dashboard.png)
 Please click on above image for a full size version
 
-# Sequence Diagram 3
+### Sequence Diagram 3
 
 ![SD Invoice](/Images/Sequence_Diagrams-Invoice.png)
 Please click on above image for a full size version
 
-# Sequence Diagram 4
+### Sequence Diagram 4
 
 ![SD Treasry](/Images/Sequence_Diagrams-Treasury.png)
 Please click on above image for a full size version
+
+# State Diagram
+
+## Introduction
+
+## Diagram
+
+![State Diagram](/Images/State_Machine.png)
+Please click on above image for a full size version
+
+# State Diagram
+
+## Introduction
+
+## Diagram
+
+![State Diagram](/Images/State_Machine.png)
+Please click on above image for a full size version
+
+# Swimlane Diagram
+
+## Introduction
+
+## Diagram
+
+![State Diagram](/Images/Swimlane.png)
+Please click on above image for a full size version
+
+# UML Component Diagram
+
+## Introduction
+
+## Diagram
+
+![Component Diagram](/Images/Component.png)
+Please click on above image for a full size version
+
+# Cloud Deployment Diagram
+
+## Introduction
+
+## Diagram
+
+![Cloud Deployment Diagram](/Images/AWS_Deployment.png)
+Please click on above image for a full size version
+
+# Skeleton Classes and Tables Definition
+
+## Skeleton Classes
+
+### Introduction
+
+### Exhibits
+
+## Database Tables
+
+### Introduction
+
+### Exhibits
+
+# Design Patterns
+
+
 
 
 
