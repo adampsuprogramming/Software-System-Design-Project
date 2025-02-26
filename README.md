@@ -115,6 +115,8 @@ In deciding which use cases are most relevant to the design of the System, poten
 
 ## Use Cases
 
+**Use Case 1**
+
 | Use Case Section           | Comment |
 |----------------------------|---------|
 | Use Case Name              | Enter Loan Details |
@@ -129,6 +131,7 @@ In deciding which use cases are most relevant to the design of the System, poten
 | Extensions                 | **Loan Analyst Does Not Fill Out Enough Information for Cash Flow Creation**<br>4.a. System displays message informing Loan Analyst that data required to calculate cash flow is missing.<br>4.b. System highlights required and missing fields in red.<br>4.c. Loan Analyst inputs fields.<br>After inputting fields, repeat Step 4.<br><br>**System Finds Error When Processing Cash Flows**<br>6.a. System displays message informing Loan Analyst of error<br>6.b. System highlights fields on Cash Flow tab that are causing error.<br>6.c. Loan Analyst corrects fields.<br>After correcting fields, repeat Step 6. |
 | Special Requirements       | Refer to Non-functional Requirement Section of document for any related non-functional requirements. |
 
+**Use Case 2**
 
 | Use Case Section           | Comment |
 |----------------------------|---------|
@@ -142,6 +145,54 @@ In deciding which use cases are most relevant to the design of the System, poten
 | Success Guarantee          | System has displayed relevant reports and has transferred accounting information to Corporate Accounting System. |
 | Main Success Scenario      | 1. Loan Accountant selects selected Reporting tab from Accounting Menu screen<br>2. System displays screen showing Reporting tab, including multiple reports and input fields (i.e. for start date, end date, accounting period, etc.)<br>3. Loan Accountant fills out relevant fields and selects ‘Generate Report’ button<br>4. System processes reporting data.<br>5. System sends relevant information to external Reporting System and displays returned report<br>*** Loan Accountant repeats steps 3, 4, and 5 for as many reports as required ***<br>6. Loan Accountant selects Close Out Period tab<br>7. System displays Period Close screen<br>8. Loan Accountant fills out any relevant fields and selects ‘Close Period and Transmit Data’<br>9. System locks period's accounting data and transmits to external Corporate Accounting System |
 | Extensions                 | **Loan Accountant Enters Fields Incorrectly**<br>3.a. System informs Loan Accountant of error by displaying error message and highlighting fields entered erroneously.<br>3.b. Loan Accountant corrects fields<br>Repeat Step 3<br><br>**Error in Connecting to Reporting System**<br>4.a. System displays message to Loan Accountant that they are unable to generate report at this time.<br>4.b. System sends error message to System Administrator.<br>System does not continue main success scenario<br><br>**Loan Accountant Finds Error**<br>5.a. Loan Accountant cancels out of process.<br>5.b. Loan Accountant contacts Loan Analyst to correct data.<br>Upon correction, process would begin again at step 1 |
+| Special Requirements       | Refer to Non-functional Requirement Section of document for any related non-functional requirements. |
+
+**Use Case 3**
+
+| Use Case Section           | Comment |
+|----------------------------|---------|
+| Use Case Name              | Generate Customer Invoices |
+| Scope                      | Commercial Mortgage Loan Servicing System |
+| Goal in Context            | A Billing Analyst wants to a generate monthly invoices and automatically email to customers |
+| Level                      | User goal |
+| Primary Actors             | Billing Analyst |
+| Stakeholders and Interests | Billing Analyst: Wants to quickly, easily, and accurately generate and send monthly invoices<br>Treasury Analyst: Wants this billing information to be accurate and to feed into cash activity reporting, as it will be utilized to forecast cash and feed into external banking system<br>Corporate Accounting System: Wants to interface with the System to receive information generated as a result of this step<br>Customers: Want this information to be easy to read, accurate, and timely, as the Customers will be remitting payments based on the generated invoices.<br>Corporate Accounting Team: Wants this information to be correct, as any errors in calculation could have ramifications for the financial statements and Corporate Accounting System<br>Management: Wants this information to be easy to read, accurate, and timely, as delivering a quality experience to the Customer ensures repeat business. Also, any errors could have legal ramifications for the Company.<br>External Auditors: Want this information to be accurate and easy to trace, as they will be auditing and opining on these calculations<br>Financial Regulators: Want this information to be accurate as it impacts both the financial statements and the Customers. |
+| Preconditions              | - Billing Analyst has an account and is authenticated<br>- All necessary information required to generate an invoice is up to date in System (i.e. any variable reference rates, any changes to contractual terms, etc.) |
+| Success Guarantee          | - System has generated and displayed invoices.<br>- System has emailed invoices to appropriate parties. |
+| Main Success Scenario      | 1. Billing Analyst selects ‘Invoices’ page<br>2. System displays screen with multiple fields and menu selections<br>3. Billing Analyst selects appropriate borrowers, billing periods, and any other relevant selections. Billing Analyst clicks on ‘Generate’<br>4. System processes and generates invoice data<br>5. System processes data and refines into invoices. Billing Analyst review invoices.<br>6. Billing Analyst confirms proper selections have been made and selects ‘Email Invoices to Customer’<br>7. System displays option screen allowing Billing Analyst to customize email<br>8. Billing Analyst customizes and clicks ‘Send’<br>9. System sends relevant information (i.e. email address, messages, invoices) to external Email System and email system sends email |
+| Extensions                 | Billing Analyst Has Not Entered All Required Fields<br>3.a. System informs Billing Analyst of missing fields and highlights them.<br>3.b. Billing Analyst enters missing fields and selects ‘Generate’<br>Proceed with Step 4<br><br>System Cannot Connect to Email System<br>8.a. System informs Billing Analyst that invoices have not been sent to Customer and to try again later.<br>8.b. System Sends Error Message to System Administrator<br>System does not continue main success scenario<br><br>Billing Analyst Finds Error In Invoices<br>5.a. Billing analyst cancels out of process.<br>5.b. Billing analyst contacts Loan Analyst to correct data.<br>Upon correction, process would begin again at step 1 |
+| Special Requirements       | Refer to Non-functional Requirement Section of document for any related non-functional requirements. |
+
+**Use Case 4**
+
+| Use Case Section           | Comment |
+|----------------------------|---------|
+| Use Case Name              | Analyze Portfolio Metrics |
+| Scope                      | Commercial Mortgage Loan Servicing System |
+| Goal in Context            | A Credit Officer wants to view a dashboard for a selected portion of the portfolio detailing credit metrics, write commentary based on it, and send commentary to relevant parties. |
+| Level                      | User goal |
+| Primary Actors             | Credit Officer |
+| Stakeholders and Interests | Credit Officers – Want to utilize this information to anticipate any potential risk situations or defaults as early as possible<br>Management – Want to use the analysis generated by the Credit Officers to enter into any workout situation and exercise any legal remedies as early as possible<br>Legal Department – Wants to be made aware of any required amendments or foreclosures required |
+| Preconditions              | - Monthly or Quarterly Covenant and Financial Statement Data has been entered into the System by Loan Analyst (Use Case not detailed in this document but will be similar to Enter Loan Details use case, except will occur on recurring basis).<br>- Credit Officer has an account and is authenticated |
+| Success Guarantee          | - Dashboard is generated<br>- Commentary is Saved<br>- Email with commentary is sent to appropriate parties |
+| Main Success Scenario      | 1. Credit Officer selects ‘Reporting Dashboard’ menu<br>2. System displays ‘Reporting Dashboard’ options and sends to front-end<br>3. Credit Officer makes relevant selections and selects ‘update dashboard’<br>4. System processes and generates dashboard data.<br>5. System sends relevant information to external Reporting System and displays returned dashboard. Credit Officer reviews dashboard.<br>6. Credit officer writes commentary (could be credit related, accounting related, payment related, etc.).<br>7. Credit officer selects related users (i.e. Treasury analyst for payment-related commentary) and saves record.<br>8. System saves data and generates emails.<br>9. System sends data to email system link to appropriate commentary to selected users |
+| Extensions                 | System Cannot Connect to Reporting System<br>5.a. System informs Credit Officer that it cannot generate the dashboard and to try again later.<br>5.b. Sends Error Message to System Administrator<br>System does not continue main success scenario<br><br>Credit Officer Does Not Completely Fill Out Selections<br>3.a. System informs Credit Officer of missing fields and highlights them.<br>3.b. Credit Officer Analyst enters missing fields and selects ‘update dashboard’<br>Scenario continues with step 4<br><br>System Cannot Connect to Email System<br>7.a. System informs Credit Officer that cannot send commentary<br>7.b. Sends Error Message to System Administrator<br>System does not continue main success scenario<br><br>Credit Officer Finds Errors When Reviewing data<br>5.a. Credit Officer cancels out of process<br>5.b. Credit Officer informs Loan Analyst of errors<br>Scenario continues with step 1 once Loan Analyst has corrected errors. |
+| Special Requirements       | Refer to Non-functional Requirement Section of document for any related non-functional requirements. |
+
+**Use Case 5**
+
+| Use Case Section           | Comment |
+|----------------------------|---------|
+| Use Case Name              | Generate Cash Flow Data |
+| Scope                      | Commercial Mortgage Loan Servicing System |
+| Goal in Context            | A Treasury Analyst wants to generate a flat file of cash activity to use in cash forecasting |
+| Level                      | User goal |
+| Primary Actors             | Treasury Analyst |
+| Stakeholders and Interests | Treasury Analyst: Wants to use cash activity file to anticipate cash flows for the day, so that cash position can be managed<br>Loan Analyst: Wants to know if any payments have not been received, as they are the first line of communication to the Customer in the case of a missed payment<br>Credit Officers: Wants to work with the Loan Analyst to remedy any missed payments so that Customer defaults can be prevented. |
+| Preconditions              | - All relevant information to generate cash flows has been entered into System (i.e. new Loans have been onboarded and any changes to contractual terms have been made, etc.)<br>- Treasury Analyst has an account and is authenticated<br>- System is displaying Treasury Operations menu |
+| Success Guarantee          | - Cash Activity has been displayed on user’s screen<br>- Data has been sent to external banking software |
+| Main Success Scenario      | 1. Treasury Analyst selects ‘Cash Activity” from Treasury Operations screen<br>2. System displays ‘Cash Activity’ page<br>3. Treasury Analyst selects various options, including date, activity type, receiving bank account, etc. and selects ‘Generate Activity’<br>4. System processes request<br>5. System sends data to external Reporting System and displays returned report<br>6. After review, Treasury analyst selects ‘Transmit to banking software’<br>7. System formats data and transmits to banking software (for reconciliation services offered by banking software) |
+| Extensions                 | **Treasury Analyst Does Not Completely Fill Out Selections**<br>3.a. System informs Treasury Analyst of missing fields and highlights them.<br>3.b. Treasury Analyst enters missing fields and selects ‘Generate’<br>Scenario continues with step 4<br><br>**Treasury Analyst Finds Errors When Reviewing data**<br>5.a. Treasury Analyst cancels out of process<br>5.b. Treasury Analyst informs Loan Analyst of errors<br>System does not continue main success scenario<br><br>**System Cannot Connect to Reporting System**<br>4.a. System informs Treasury Analyst that it cannot generate report<br>4.b. Sends Error Message to System Administrator<br>System does not continue main success scenario<br><br>**System Cannot Connect to Banking System**<br>6.a. System informs Treasury Analyst that it cannot send cash flows to bank<br>6.b. Sends Error Message to System Administrator<br>System does not continue main success scenario |
 | Special Requirements       | Refer to Non-functional Requirement Section of document for any related non-functional requirements. |
 
 
