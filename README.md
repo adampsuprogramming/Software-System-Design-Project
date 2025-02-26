@@ -18,6 +18,7 @@
 - [Cloud Deployment Diagram](#cloud-deployment-diagram)
 - [Skeleton Classes and Tables Definition](#skeleton-classes-and-tables-definition)
 - [Design Patterns](#design-patterns)
+- [References](#references)
 
 # Problem Statement and Requirements
 
@@ -208,6 +209,9 @@ Please click on above image for a full size version
 ### Exhibits
 
 # Design Patterns
+
+# References
+Larman, C. (2005). *Applying UML and Patterns: An Introduction to Object-Oriented Analysis and Design and Iterative Development* (3rd ed.). Pearson.
 
 
 
