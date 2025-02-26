@@ -109,11 +109,13 @@ The following table describes the target users of the System (the “Primary Act
 
 # UML Use Case Diagram
 
-## Use Case Introduction
+## Use Case and System Sequence Diagrams (SSDs) Introduction
 
 In deciding which use cases are most relevant to the design of the System, potential use cases were evaluated and a selection of those which are critical to the desired business functionality, and which will have a substantial impact on design decisions were chosen (Larman, 2005).  These use cases were also chosen because they involve primary user types of the System (the five primary actors depicted in the previous section).  By sampling functionality from each of those five actors, the major components and much of the primary desired functionality of the System were captured and documented.  Note that only a sampling of use case extensions was captured in the documentation of these use cases, due to the scope of this document.  
 
-## Use Cases
+The use cases listed were further illustrated through the documentation of SSDs, which show interactions and treat the System as a black box.  These SSDs are useful in determining the inflows and outflows between the primary actors, the System, and any secondary actors that might be involved in the chosen use cases.  They are also helpful in developing Sequence Diagrams (SDs).
+
+## Use Cases and System Sequence Diagrams
 
 **Use Case 1**
 
@@ -131,6 +133,10 @@ In deciding which use cases are most relevant to the design of the System, poten
 | Extensions                 | **Loan Analyst Does Not Fill Out Enough Information for Cash Flow Creation**<br>4.a. System displays message informing Loan Analyst that data required to calculate cash flow is missing.<br>4.b. System highlights required and missing fields in red.<br>4.c. Loan Analyst inputs fields.<br>After inputting fields, repeat Step 4.<br><br>**System Finds Error When Processing Cash Flows**<br>6.a. System displays message informing Loan Analyst of error<br>6.b. System highlights fields on Cash Flow tab that are causing error.<br>6.c. Loan Analyst corrects fields.<br>After correcting fields, repeat Step 6. |
 | Special Requirements       | Refer to Non-functional Requirement Section of document for any related non-functional requirements. |
 
+**SSD for Use Case 1**
+
+![SSD1](/Images/SSD-Loan_Details.png)
+
 **Use Case 2**
 
 | Use Case Section           | Comment |
@@ -146,6 +152,10 @@ In deciding which use cases are most relevant to the design of the System, poten
 | Main Success Scenario      | 1. Loan Accountant selects Reporting tab from Accounting Menu screen<br>2. System displays screen showing Reporting tab, including multiple reports and input fields (i.e. for start date, end date, accounting period, etc.)<br>3. Loan Accountant fills out relevant fields and selects ‘Generate Report’ button<br>4. System processes reporting data.<br>5. System sends relevant information to external Reporting System and displays returned report<br>*** Loan Accountant repeats steps 3, 4, and 5 for as many reports as required ***<br>6. Loan Accountant selects Close Out Period tab<br>7. System displays Period Close screen<br>8. Loan Accountant fills out any relevant fields and selects ‘Close Period and Transmit Data’<br>9. System locks period's accounting data and transmits to external Corporate Accounting System |
 | Extensions                 | **Loan Accountant Enters Fields Incorrectly**<br>3.a. System informs Loan Accountant of error by displaying error message and highlighting fields entered erroneously.<br>3.b. Loan Accountant corrects fields<br>Repeat Step 3<br><br>**Error in Connecting to Reporting System**<br>4.a. System displays message to Loan Accountant that they are unable to generate report at this time.<br>4.b. System sends error message to System Administrator.<br>System does not continue main success scenario<br><br>**Loan Accountant Finds Error**<br>5.a. Loan Accountant cancels out of process.<br>5.b. Loan Accountant contacts Loan Analyst to correct data.<br>Upon correction, process would begin again at step 1 |
 | Special Requirements       | Refer to Non-functional Requirement Section of document for any related non-functional requirements. |
+
+**SSD for Use Case 2**
+
+![SSD2](/Images/SSD-Perform_Acct_Proc.png)
 
 **Use Case 3**
 
@@ -163,6 +173,10 @@ In deciding which use cases are most relevant to the design of the System, poten
 | Extensions                 | Billing Analyst Has Not Entered All Required Fields<br>3.a. System informs Billing Analyst of missing fields and highlights them.<br>3.b. Billing Analyst enters missing fields and selects ‘Generate’<br>Proceed with Step 4<br><br>System Cannot Connect to Email System<br>8.a. System informs Billing Analyst that invoices have not been sent to Customer and to try again later.<br>8.b. System Sends Error Message to System Administrator<br>System does not continue main success scenario<br><br>Billing Analyst Finds Error In Invoices<br>5.a. Billing analyst cancels out of process.<br>5.b. Billing analyst contacts Loan Analyst to correct data.<br>Upon correction, process would begin again at step 1 |
 | Special Requirements       | Refer to Non-functional Requirement Section of document for any related non-functional requirements. |
 
+**SSD for Use Case 3**
+
+![SSD3](/Images/SSD-Generate_Cust_Inv.png)
+
 **Use Case 4**
 
 | Use Case Section           | Comment |
@@ -178,6 +192,10 @@ In deciding which use cases are most relevant to the design of the System, poten
 | Main Success Scenario      | 1. Credit Officer selects ‘Reporting Dashboard’ menu<br>2. System displays ‘Reporting Dashboard’ options and sends to front-end<br>3. Credit Officer makes relevant selections and selects ‘update dashboard’<br>4. System processes and generates dashboard data.<br>5. System sends relevant information to external Reporting System and displays returned dashboard. Credit Officer reviews dashboard.<br>6. Credit officer writes commentary (could be credit related, accounting related, payment related, etc.).<br>7. Credit officer selects related users (i.e. Treasury analyst for payment-related commentary) and saves commentary.<br>8. System saves data and generates emails.<br>9. System sends email via Email System along with relevant commentary to selected users. |
 | Extensions                 | System Cannot Connect to Reporting System<br>5.a. System informs Credit Officer that it cannot generate the dashboard and to try again later.<br>5.b. Sends Error Message to System Administrator<br>System does not continue main success scenario<br><br>Credit Officer Does Not Completely Fill Out Selections<br>3.a. System informs Credit Officer of missing fields and highlights them.<br>3.b. Credit Officer Analyst enters missing fields and selects ‘update dashboard’<br>Scenario continues with step 4<br><br>System Cannot Connect to Email System<br>7.a. System informs Credit Officer that cannot send commentary<br>7.b. Sends Error Message to System Administrator<br>System does not continue main success scenario<br><br>Credit Officer Finds Errors When Reviewing data<br>5.a. Credit Officer cancels out of process<br>5.b. Credit Officer informs Loan Analyst of errors<br>Scenario continues with step 1 once Loan Analyst has corrected errors. |
 | Special Requirements       | Refer to Non-functional Requirement Section of document for any related non-functional requirements. |
+
+**SSD for Use Case 4**
+
+![SSD4](/Images/SSD-Analyze_Portfolio_Metrics.png)
 
 **Use Case 5**
 
@@ -196,11 +214,9 @@ In deciding which use cases are most relevant to the design of the System, poten
 | Special Requirements       | Refer to Non-functional Requirement Section of document for any related non-functional requirements. |
 
 
-## System Sequence Diagram Introduction
+**SSD for Use Case 5**
 
-The use cases listed were further illustrated through the documentation of System Sequence Diagrams (SSDs), which show interactions and treat the System as a black box.  These SSDs are useful in determining the inflows and outflows between the primary actors, the System, and any secondary actors that might be involved in the chosen use cases.  They are also helpful in developing Sequence Diagrams (SDs).
-
-## System Sequence Diagrams
+![SSD5](/Images/SSD-Generate_Cash_Flow_Data.png)
 
 ## Use Case Diagram Introduction
 
