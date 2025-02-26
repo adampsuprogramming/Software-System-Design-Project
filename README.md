@@ -109,9 +109,23 @@ The following table describes the target users of the System (the “Primary Act
 
 # UML Use Case Diagram
 
-## Introduction
+## Use Case Introduction
 
-## Diagram
+In deciding which use cases are most relevant to the design of the System, potential use cases were evaluated and a selection of those which are critical to the desired business functionality, and which will have a substantial impact on design decisions were chosen (Larman, 2005).  These use cases were also chosen because they involve primary user types of the System (the five primary actors depicted in the previous section).  By sampling functionality from each of those five actors, the major components and much of the primary desired functionality of the System were captured and documented.  Note that only a sampling of use case extensions was captured in the documentation of these use cases, due to the scope of this document.  
+
+## Use Cases
+
+## System Sequence Diagram Introduction
+
+The use cases listed were further illustrated through the documentation of System Sequence Diagrams (SSDs), which show interactions and treat the System as a black box.  These SSDs are useful in determining the inflows and outflows between the primary actors, the System, and any secondary actors that might be involved in the chosen use cases.  They are also helpful in developing Sequence Diagrams (SDs).
+
+## System Sequence Diagrams
+
+## Use Case Diagram Introduction
+
+Finally, the use case diagram was generated from the interactions elaborated in the above use cases and SSDs.  The use case diagrams show the primary actors interacting with the System via the use cases and the involvement of secondary actors.  Note that only the use cases below were included in the use case diagram.  While many more use cases would exist, their inclusion would be outside of the scope of this document. 
+
+## Use Case Diagram
 
 ![Use Case Diagram](/Images/Use_Case_Diagram.png)
 
