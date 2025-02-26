@@ -89,6 +89,20 @@ The following table describes the target users of the System (the “Primary Act
 | Offstage  | External Auditors             | External auditors want to be able to utilize and rely on the output of the System. They want to be able to test the System for controls reliance and be able to generate required reports for their audit procedures.                         |
 | Offstage  | Financial Regulators          | Financial regulators want to ensure that the System is accurate from both a billing and financial reporting perspective, to protect the Customers and those parties that would rely on the financial information that it produces.              |
 
+### Business Goals that System Is Required to Support
+
+| Goal                                                                                                                                     | How System Supports Goal                                                                                                                                                                                                                                   |
+|------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Shortening monthly accounting close time by two days and Quarterly accounting close by three days within next two years              | Efficiencies created by combining disparate systems, ease of use with user interface design, and error prevention through carefully design calculations and automatic journal entry generation.                                                     |
+| Supporting increased originations of 20 percent annually and a servicing portfolio growth of a similar degree.                           | Efficiencies created by ease of training and use, performance of system, and scalable design.                                                                                                                                                                |
+| Supporting the potential acquisition of a smaller competitor within next five years                                                      | Scalable design, ease of use, and use of GRASP techniques for interoperability.                                                                                                                                                                            |
+| Decreasing the processing time of financial information received from borrowers by 50 percent within the next three years.                | Efficiencies created by moving onto a modern system, including modern GUI, system response time, and built in workflows.                                                                                                                                      |
+| Zero financial statement reissuance due to accounting errors                                                                             | Similar to shortening monthly accounting close, the system will support accuracy by implementing error prevention through carefully design calculations and automatic journal entry generation.                                                      |
+| Decrease in realized losses of 10 percent in the next three years                                                                         | Integrating loan credit reporting directly into the System and decreasing time in processing borrower financial information (as per above).                                                                                                                |
+| Shortening loan onboarding process by 25 percent over the next three years                                                                 | Similar to processing financial information, efficiencies will be created by moving onto a modern system, including modern GUI, system response time, and built in workflows.                                                                      |
+| Decreasing overnight cash balances by 50 percent over next two years                                                                       | Providing accurate cash forecasting information to Treasury, allowing them to better forecast cash balances and pay down short-term debt.                                                                                                                   |
+
+
 
 # UML Use Case Diagram
 
@@ -97,7 +111,7 @@ The following table describes the target users of the System (the “Primary Act
 ## Diagram
 
 ![Use Case Diagram](/Images/Use_Case_Diagram.png)
-Please click on above image for a full size version
+
 
 # UML Domain Model
 
