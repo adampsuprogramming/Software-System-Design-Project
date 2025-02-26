@@ -289,20 +289,32 @@ The UML Swimlane Diagram presented below details the steps taken during the comp
 Note that the Swimlane diagram has been annotated with references that correspond with the situations explained below.  These two explanations follow the two most likely cases: No Issues Noted During Compliance and Issues Noted and Mortgage Amended.  *To avoid overcrowding the diagram, the rarer foreclosure situation was not annotated.*
 
 **No Issues Noted During Compliance**
-A1) The Swimlane Diagram begins with the Customer sending in the required compliance package to the Company.  
-A2) The Loan Analyst is the first to handle the compliance package and will review and analyze it while entering relevant data into the System (i.e. covenant levels, financial results, etc.). 
-A3) In a typical situation where there are no issues, the Loan Analyst will finalize the data, and the Credit Officer will review it within a standard timeframe.  
-A4) The Credit Officer will view it on a dashboard in the System and write commentary, which will then be forwarded to Management.  
-A5) Management will review the commentary and, if no concerns are noted, the compliance process will be finalized.
+
+  A1) The Swimlane Diagram begins with the Customer sending in the required compliance package to the Company.
+  
+  A2) The Loan Analyst is the first to handle the compliance package and will review and analyze it while entering relevant data into the System (i.e. covenant levels, financial results, etc.).
+  
+  A3) In a typical situation where there are no issues, the Loan Analyst will finalize the data, and the Credit Officer will review it within a standard timeframe.
+  
+  A4) The Credit Officer will view it on a dashboard in the System and write commentary, which will then be forwarded to Management.
+  
+  A5) Management will review the commentary and, if no concerns are noted, the compliance process will be finalized.
 
 **Issues Noted and Mortgage Amended**
-B1) In a situation where there is an issue, the Loan Analyst is typically the first to notice and will notify the Credit Officer immediately after inputting the data into the System. 
-B2) If the issue is substantial, the Credit Officer will raise it to a higher level and review it with Management.  
-B3) In the event that Management agrees that the issue is substantive, they will refer the issue to the Legal Department.
-B4) Legal will work on formulating a solution and seek approval on it from Management.
-B5) After getting approval, the Legal Department will draft the solution.  
-B6) In the event that the loan is not foreclosed on, the borrower and legal will (usually after several iterations of negotiations and review) agree on a remedy and execute it. 
-B7) The terms of the remedy are then entered into the System by the Loan Analyst.
+
+  B1) In a situation where there is an issue, the Loan Analyst is typically the first to notice and will notify the Credit Officer immediately after inputting the data into the System.
+  
+  B2) If the issue is substantial, the Credit Officer will raise it to a higher level and review it with Management.
+  
+  B3) In the event that Management agrees that the issue is substantive, they will refer the issue to the Legal Department.
+  
+  B4) Legal will work on formulating a solution and seek approval on it from Management.
+  
+  B5) After getting approval, the Legal Department will draft the solution.
+  
+  B6) In the event that the loan is not foreclosed on, the borrower and legal will (usually after several iterations of negotiations and review) agree on a remedy and execute it.
+  
+  B7) The terms of the remedy are then entered into the System by the Loan Analyst.
 
 ## Diagram
 
