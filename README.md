@@ -117,7 +117,7 @@ The use cases listed were further illustrated through the documentation of SSDs,
 
 ## Use Cases and System Sequence Diagrams
 
-**Use Case 1**
+### Use Case 1
 
 | Use Case Section           | Comment |
 |----------------------------|---------|
@@ -133,11 +133,11 @@ The use cases listed were further illustrated through the documentation of SSDs,
 | **Extensions**                 | <ins>Loan Analyst Does Not Fill Out Enough Information for Cash Flow Creation</ins><br>4.a. System displays message informing Loan Analyst that data required to calculate cash flow is missing.<br>4.b. System highlights required and missing fields in red.<br>4.c. Loan Analyst inputs fields.<br>*After inputting fields, repeat Step 4.* <br><br><ins>System Finds Error When Processing Cash Flows</ins><br>6.a. System displays message informing Loan Analyst of error<br>6.b. System highlights fields on Cash Flow tab that are causing error.<br>6.c. Loan Analyst corrects fields.<br>*After correcting fields, repeat Step 6.* |
 | **Special Requirements**       | Refer to Non-functional Requirement Section of document for any related non-functional requirements. |
 
-**SSD for Use Case 1**
+### SSD for Use Case 1
 
 ![SSD1](/Images/SSD-Loan_Details.png)
 
-**Use Case 2**
+### Use Case 2
 
 | Use Case Section           | Comment |
 |----------------------------|---------|
@@ -153,11 +153,11 @@ The use cases listed were further illustrated through the documentation of SSDs,
 | **Extensions**                 | <ins>Loan Accountant Enters Fields Incorrectly</ins><br>3.a. System informs Loan Accountant of error by displaying error message and highlighting fields entered erroneously.<br>3.b. Loan Accountant corrects fields<br>*Repeat Step 3*<br><br><ins>Error in Connecting to Reporting System</ins><br>4.a. System displays message to Loan Accountant that they are unable to generate report at this time.<br>4.b. System sends error message to System Administrator.<br>*System does not continue main success scenario*<br><br><ins>Loan Accountant Finds Error</ins><br>5.a. Loan Accountant cancels out of process.<br>5.b. Loan Accountant contacts Loan Analyst to correct data.<br>*Upon correction, process would begin again at step 1* |
 | **Special Requirements**       | Refer to Non-functional Requirement Section of document for any related non-functional requirements. |
 
-**SSD for Use Case 2**
+### SSD for Use Case 2
 
 ![SSD2](/Images/SSD-Perform_Acct_Proc.png)
 
-**Use Case 3**
+### Use Case 3
 
 | Use Case Section           | Comment |
 |----------------------------|---------|
@@ -173,11 +173,11 @@ The use cases listed were further illustrated through the documentation of SSDs,
 | **Extensions**                 | <ins>Billing Analyst Has Not Entered All Required Fields</ins><br>3.a. System informs Billing Analyst of missing fields and highlights them.<br>3.b. Billing Analyst enters missing fields and selects ‘Generate’<br>*Proceed with Step 4*<br><br><ins>System Cannot Connect to Email System</ins><br>8.a. System informs Billing Analyst that invoices have not been sent to Customer and to try again later.<br>8.b. System Sends Error Message to System Administrator<br>*System does not continue main success scenario*<br><br><ins>Billing Analyst Finds Error In Invoices</ins><br>5.a. Billing analyst cancels out of process.<br>5.b. Billing analyst contacts Loan Analyst to correct data.<br>*Upon correction, process would begin again at step 1* |
 | **Special Requirements**       | Refer to Non-functional Requirement Section of document for any related non-functional requirements. |
 
-**SSD for Use Case 3**
+### SSD for Use Case 3
 
 ![SSD3](/Images/SSD-Generate_Cust_Inv.png)
 
-**Use Case 4**
+### Use Case 4
 
 | Use Case Section           | Comment |
 |----------------------------|---------|
@@ -193,11 +193,11 @@ The use cases listed were further illustrated through the documentation of SSDs,
 | **Extensions**                 | <ins>System Cannot Connect to Reporting System</ins><br>5.a. System informs Credit Officer that it cannot generate the dashboard and to try again later.<br>5.b. Sends Error Message to System Administrator<br>*System does not continue main success scenario*<br><br><ins>Credit Officer Does Not Completely Fill Out Selections</ins><br>3.a. System informs Credit Officer of missing fields and highlights them.<br>3.b. Credit Officer Analyst enters missing fields and selects ‘update dashboard’<br>*Scenario continues with step 4*<br><br><ins>System Cannot Connect to Email System</ins><br>7.a. System informs Credit Officer that cannot send commentary<br>7.b. Sends Error Message to System Administrator<br>*System does not continue main success scenario*<br><br><ins>Credit Officer Finds Errors When Reviewing data</ins><br>5.a. Credit Officer cancels out of process<br>5.b. Credit Officer informs Loan Analyst of errors<br>*Scenario continues with step 1 once Loan Analyst has corrected errors.* |
 | **Special Requirements**       | Refer to Non-functional Requirement Section of document for any related non-functional requirements. |
 
-**SSD for Use Case 4**
+### SSD for Use Case 4
 
 ![SSD4](/Images/SSD-Analyze_Portfolio_Metrics.png)
 
-**Use Case 5**
+### Use Case 5
 
 | Use Case Section           | Comment |
 |----------------------------|---------|
@@ -214,7 +214,7 @@ The use cases listed were further illustrated through the documentation of SSDs,
 | **Special Requirements**       | Refer to Non-functional Requirement Section of document for any related non-functional requirements. |
 
 
-**SSD for Use Case 5**
+### SSD for Use Case 5
 
 ![SSD5](/Images/SSD-Generate_Cash_Flow_Data.png)
 
