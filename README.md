@@ -275,6 +275,18 @@ Please click on above image for a full size version
 
 ## Introduction
 
+The state diagram below represents the various states that a Loan object can enter over its life in the System.  The states are represented by rounded rectangles and the transitions between states are represented by lines with arrows.  The states of a Loan are important to the System, as loans at different states can have different attributes that become mandatory, different reporting requirements, etc.
+
+Loans are only entered into the System after they are originated and fully funded.  Prior to this, loan opportunities that have not yet closed are tracked in a separate system specifically designed to manage leads and opportunities.  Once a loan has legally closed and funded, it enters the **Performing** state.  As long as the loan remains current with its payments and stays within the confines of its covenants, the loan remains in this state.  Upon full repayment, the Loan will enter the **Repaid** state, which is a final state.
+
+If a Loan breaches a covenant, it will enter the **Covenant Default** state.  At this point, the covenant breach is either amended or waived (as further described in the Swimlane Diagram), thus returning it to **Performing**, or it is foreclosed upon and enters the **Foreclosed** state.
+
+If a Loan misses a payment, it enters the **Delinquent** state. Typically, underlying loan documents have a built-in grace period for missed payments and, if the missed payment(s) are brought current before that grace period expires, the Loan moves back into the **Performing** state.  If the grace period expires prior to payments being made, the loan enters the **Payment Default** state.
+
+A payment default is typically a serious incident and at this point, the lender can either agree upon an amendment that restructures the Loan (thus entering the **Restructured** state), or the lender can foreclose on the loan, thus entering the **Foreclosed** state.  Note that from the **Restructured** state, a loan can enter the **Covenant Default** state or the **Delinquent State**, similar to a loan in the **Performing** state.
+
+From the **Foreclosed** state, the lender will try to exercise any remedies (typically involving monetizing the collateral) to recover its loan.  If the Loan is full recovered (including all principal and interest payments), it moves into the **Recovered** state, which is a final state.  If the loan is not fully recovered (meaning that the exercised remedies did not fully cover the principal and interest owed), the Loan enters the **Written Off** state, which is also a final state.
+
 ## State Diagram for Loan Object
 
 ![State Diagram](/Images/State_Machine.png)
@@ -322,7 +334,7 @@ Please click on above image for a full size version
 
 # UML Component Diagram
 
-## Description
+
 
 ### Introduction
 
