@@ -300,6 +300,23 @@ Please click on above image for a full size version
 
 ## Introduction
 
+The diagram below represents the Design Class Model for the System.  Note that the scope of the Design Class Model is specifically focused on the portions of the Use Cases that were further detailed in the Sequence Diagrams.  The below represents significant design decisions that were utilized (note that many of these design decisions are discussed in greater detail in the [Design Patterns](#design-patterns) section of this document).
+
+Factory Methods – The LoanFactory and JournalEntryFactory classes were introduced to move the responsibility of object creation into a separate class.  You can read more about this design decision in the [Design Patterns](#design-patterns) section.
+
+The DashboardManager class was introduced to handle the functionality associated with generating and updating the dashboard used by the Credit Officers.  It primarily does this by acting as an intermediary between data received from the database (via the DBAccess class) and the external Reporting System (via the ReportSysGateway class).  It is also responsible for interfacing with the EmailSystemGateway class to send loan commentary.  
+
+The JournalEntryProcessor class is assigned the functionality associated with reporting on the journal entries using the external Reporting System (via the ReportSysGateway class) and initiating their transmission to the external Corporate Accounting System via the CorpAcctSystGateway class.
+
+The TreasuryReportProcessor class is responsible for retrieving forecasted cash flows from the database, reporting on them (using the external Reporting class via the ReportSysGateway class), and initiating their transmission to the external banking systems via the BankSoftwareGateway class.
+
+The InvoiceProcessor class is responsible for generating invoices and emailing them to the customer using the external email system via the EmailSystemGateway class.
+
+The above four classes (DashboardManager, JournalEntryProcessor, TreasuryReportProcessor, and InvoiceProcessor) represent Pure Fabrications and Indirections.  You can read more about these design decisions in the [Design Patterns](#design-patterns) section.
+
+Interface Classes: The BankSoftwareGateway, EmailSystemGateway, CorpActSystGateway, and DBAccess classes act as intermediaries between the System and external systems (or in the case of the DBAccess class, the database).  They represent Pure Fabrications and Indirections.  You can read more about these design decisions in the [Design Patterns](#design-patterns) section.
+
+
 ## Diagram
 
 ![Class Diagram](/Images/Design_Class_Diagram.png)
