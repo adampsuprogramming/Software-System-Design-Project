@@ -393,9 +393,38 @@ Please click on above image for a full size version
 
 # Design Patterns
 
+Throughout the design of the System, multiple design patterns have been utilized.  While some of these design patterns were listed in the explanations of the individual diagrams in this document, the below serves to consolidate the explanations into one location.
+
+## Pure Fabrication and Indirection Patterns
+
+In the design of the System, the Pure Fabrication and Indirection GRASP patterns are very closely related.  In the Pure Fabrication Pattern, a class is created that is not a real-world object or concept, often to promote low coupling.  In the Indirection Pattern, a class is introduced as an intermediary between two objects to support low coupling. In the System, classes that were not part of the problem domain were created to act as an intermediary between the system and other external or internal components (these classes are CorpAcctSysGateway, BankSoftwareGateway, EmailSystemGateway, ReportSysGateway, and DBAccess), thus incorporating both patterns. The purpose of these classes is to separate the knowledge about the connection and the API format of the external Systems from the classes that utilize the external systems.  This promotes low coupling, since if the external system ever changes, only these intermediary classes would need to change instead of having to alter each class that uses the external systems. 
+
+## Single Responsibility Principle
+The SOLID Single Responsibility Principle states that a class should have only one reason to change *(Martin, 1996)*.  By introducing the intermediary components described above along with other components such as the Simple Factory classes described below, responsibilities have been removed from classes that are unrelated to their core mission, thus allowing them to focus on one responsibility and promote higher cohesion within the classes.  For example, by introducing the LoanFactory class, the BillingHandler class does not need to know how to make Loan objects; instead, it can focus on its responsibilities of invoicing.
+
+## High Cohesion
+The Pure Fabrication, Indirection, and Single Responsibility Patterns all facilitate the High Cohesion principle, since they remove unrelated responsibilities from a class, thus allowing that class to focus on its primary responsibilities.
+
+## Low Coupling
+The Pure Fabrication and Indirection support the Low Coupling principle, since they introduce an intermediary class with the goal of reducing coupling between two other classes.
+
+## Simple Factory Pattern
+While the Simple Factory Pattern is *NOT A GOF PATTERN*, it fits neatly into the design of the System.  The goal of the Simple Factory Pattern is move the logic of object creation to a separate class in order to promote better cohesion amongst the classes that would otherwise create the objects.  So, by introducing the LoanFactory class, neither the DashboardHandler nor the BillingHandler classes need to know how to create a Loan object, which might involve complex logic.  Instead, they can call the LoanFactory class, which will do so for them.
+
+## Singleton Pattern
+*Note that the while the Singleton Pattern is not explicitly used in the diagrams due to scope limitations, it will be useful while implementing the system.*  The Singleton GOF pattern ensures that multiple instances of commonly used objects are not created (i.e. only one instance of it exists for all objects to access).  This pattern will be useful when creating those objects such as the Gateway objects described previously that should not be created each time another object wants to use it, thus reducing the memory required for the System and increasing performance.  It also simplifies the System, since creation logic only needs to be called once.
+
+## Three-Tier Architecture 
+While not explicitly detailed in the module, the three-tier architecture of the presentation later, logic layer, and data layer, is a commonly used pattern in System Architecture that helps with development (since each tier can be worked on separately), scalability (since the tiers can scale independently from each other), and separation of concerns *(IBM, n.d.).*
+
 # References
 Larman, C. (2005). *Applying UML and Patterns: An Introduction to Object-Oriented Analysis and Design and Iterative Development* (3rd ed.). Pearson.
 
+IBM. (n.d.). *Three-tier architecture*. Retrieved February 26, 2025, from https://www.ibm.com/think/topics/three-tier-architecture
+
+GeeksforGeeks. (n.d.). *Security in distributed system*. Retrieved February 26, 2025, from https://www.geeksforgeeks.org/security-in-distributed-system/#authentication-mechanisms-in-distributed-system
+
+Martin, R. (1996). *Class design principles*. Object Mentor.
 
 
 
