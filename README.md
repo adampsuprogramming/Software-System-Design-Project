@@ -275,7 +275,7 @@ Please click on above image for a full size version
 
 ## Introduction
 
-## Diagram
+## State Diagram for Loan Object
 
 ![State Diagram](/Images/State_Machine.png)
 Please click on above image for a full size version
@@ -316,9 +316,8 @@ Note that the Swimlane diagram has been annotated with references that correspon
   
   B7) The terms of the remedy are then entered into the System by the Loan Analyst.
 
-## Diagram
-
-![State Diagram](/Images/Swimlane.png)
+## Swimlane Diagram
+![Swimlane Diagram](/Images/Swimlane.png)
 Please click on above image for a full size version
 
 # UML Component Diagram
