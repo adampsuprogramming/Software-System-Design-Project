@@ -370,7 +370,38 @@ Please click on above image for a full size version
 
 # Cloud Deployment Diagram
 
-## Introduction
+*Note that the explanation below will only highlight those key decisions and will not explain every component of the AWS diagram, due to scope limitations.*
+
+## Inclusion of Certificate Manager
+Due to the security requirements of the system, Route 53 integrates with the Certificate Manager to enforce HTTPS traffic between users and the ALB.  Additionally, the Certificate Manager will automatically handle all certificate renewal and automatically integrates with ALB.  
+
+## Frontend on ECS
+The frontend will be hosted within ECS instead of S3 due to the dynamic nature of the System and due to the security nonfunctional requirements being emphasized by management.  Much of the content served up to the users will be dynamic (Dashboards, reports, etc.) and S3 is better suited for large public websites that serve significant amounts of static content.  Additionally, the System should only be accessed by users who are authorized, since security is essential.  Therefore,  the decision was made to completely house it within a private subnet in the VPC and in order to better control security.  
+
+## Two Regions and Latency Based Routing (via Route 53)
+The Company has offices that are located across the United States, with the majority of operations being on the east and west Coasts.  As performance was a driving nonfunctional requirement of the System, the System will be in two regions, us-east-1 and us-west-2.  Additionally, Route 53 will implement latency-based routing to the region that has the lowest latency for each individual user.
+
+## Web Application Firewall
+Due to the emphasis on security, the decision was made to utilize the Amazon Web Application Firewall, which will allow web traffic filtering (which could be useful to prevent access from outside of the Company’s domain) and blocking attacks and bots. *(Amazon Web Services, n.d.-a)*
+
+## Application Load Balancer (ALB)
+The ALB is a key component of the System that promotes the nonfunctional requirements of scalability, performance, and availability.  It will automatically route traffic based on its algorithms and volume of traffic to the appropriate docker containers within the ECS instances. *(Amazon Web Services, n.d.-b)*.
+
+## Auto-Scaling with ECS
+One of the key components of the AWS deployment structure that helps facility performance and scalability is the autoscaling, which is managed by ECS in conjunction with AWS Auto Scaling.  Based on preferences that can be configured, ECS scales up or down Fargate tasks (running Docker Instances) depending on volume and ECS task utilization thresholds.  The ALB works in conjunction with this autoscaling to automatically ensure that users are being routed to tasks that have sufficient capacity and, when high traffic is detected, ECS works to provision additional Fargate tasks to accommodate the traffic *(Amazon Web Services, n.d.-c)*.
+
+## NAT Gateway
+The NAT Gateway allows elements from with private subnets to securely interface with services on the internet without exposing the private subnets to internet traffic.  Instead, it only allows specific outgoing requests and responses back from those services to the outgoing requests.  It is another layer in promoting the emphasis on security with the System.
+
+## AWS Elastic Container Registry
+The ECR serves two key functions.  It interfaces with GitHub’s CI/CD mechanism and houses the new Docker images that GitHub pushes to it.  It also acts as the repository for these images so that, when ECS needs to provision a new instance of a Docker Container, it pulls the newest container version directly from the ECR.
+
+## CloudWatch and Splunk Integration
+Since all utilized AWS components integrate with AWS CloudWatch’s monitoring capabilities, the decision was made to centralize monitoring with CloudWatch.  CloudWatch will periodically forward its collected data to Splunk, which will serve as the central repository for all logs.  Splunk provides tools, dashboards, and alerts for System monitoring and log management.
+
+## AWS Aurora Database
+The decision was made to utilize AWS Aurora Database, as the System’s highly structured data was a good candidate for a RDBMS.  AWS Aurora is fully managed and offers high availability, scaling, and performance *(Amazon Web Services, n.d.-d)*.  Additionally, a primary-replica setup is being used (utilizing the Data Replication design pattern), in which the primary database will continuously replicate any changes to the replica database.  Both regions will read from their individual databases, but all writes will be centralized with the primary database (in us-east-1, where most of the users reside).  In the event of an outage of the primary DB, Aurora will automatically promote the replica database to the new primary.
+
 
 ## Diagram
 
@@ -417,6 +448,9 @@ While the Simple Factory Pattern is *NOT A GOF PATTERN*, it fits neatly into the
 ## Three-Tier Architecture 
 While not explicitly detailed in the module, the three-tier architecture of the presentation later, logic layer, and data layer, is a commonly used pattern in System Architecture that helps with development (since each tier can be worked on separately), scalability (since the tiers can scale independently from each other), and separation of concerns *(IBM, n.d.).*
 
+## Data Replication Design Pattern
+The Data Replication design pattern is being used (as further explained in the AWS Cloud Deployment section) to replicate the database across two AWS regions.  This pattern was chosen for increased availability in the event of a failure and increased performance, since users will use the replica that that is closest to their location.  It is being used as this data is critical to the operations of the Company.
+
 # References
 Larman, C. (2005). *Applying UML and Patterns: An Introduction to Object-Oriented Analysis and Design and Iterative Development* (3rd ed.). Pearson.
 
@@ -425,6 +459,14 @@ IBM. (n.d.). *Three-tier architecture*. Retrieved February 26, 2025, from https:
 GeeksforGeeks. (n.d.). *Security in distributed system*. Retrieved February 26, 2025, from https://www.geeksforgeeks.org/security-in-distributed-system/#authentication-mechanisms-in-distributed-system
 
 Martin, R. (1996). *Class design principles*. Object Mentor.
+
+Amazon Web Services. (n.d.-a). *AWS Web Application Firewall (WAF)*. AWS. Retrieved February 27, 2025, from https://aws.amazon.com/waf/
+
+Amazon Web Services. (n.d.-b). *What is an Application Load Balancer? - Elastic Load Balancing*. Retrieved February 27, 2025, from https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html
+
+Amazon Web Services. (n.d.-c). *Service Auto Scaling for Amazon ECS. AWS Documentation*. Retrieved February 27, 2025, from https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-auto-scaling.html
+
+Amazon Web Services. (n.d.-d). *Amazon Aurora*. AWS. Retrieved February 27, 2025, from https://aws.amazon.com/rds/aurora/
 
 
 
