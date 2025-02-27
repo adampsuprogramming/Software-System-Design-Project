@@ -323,7 +323,45 @@ Please click on above image for a full size version
 
 # UML Component Diagram
 
-## Introduction
+## Description
+
+### Introduction
+
+The Component Diagram below is a logical representation of the major components, modules, and interfaces of the System. Connectors between components are shown with a solid line and dependencies between components are represented by dotted lines with arrows.  The System has been developed using a standard three-tier architecture of a presentation, application, and data layer.  This architectural approach was chosen because it offers separation of concerns and separate codebases for each of the three-tiers.  This allows independent development of the tiers and independent scalability, which is useful due to the expected growth of the Company *(IBM, n.d.)*. Additionally, since this is a newly developed System, the Canvas module recommends that development starts out using a traditional architecture and then microservices or lambda functionality can be carved out during future refinements.
+
+*Important Note: The Component Diagram includes additional functionality than that which is illustrated on the previous diagrams (i.e. Design Class Diagram) to demonstrate a fully realized system.*
+
+### Frontend
+
+The Frontend is comprised of two conceptual components: The presentation layer and the logic layer.  
+
+<ins>Presentation Layer</ins> - The presentation layer houses those elements that the user is going to directly interact with.  It includes HTML, CSS, JavaScript and any other UI components. 
+
+<ins>Logic Layer</ins>- The logic layer interacts with both the Presentation Layer and with the Backend (via the API).  Its responsibilities include event handling, form validation, state management, etc.  Importantly, it is the conduit that handles any requests arising from user interaction and routes them to the proper component of the backend via the API.
+
+### Backend
+
+The Backend handles the business logic and security of the System.  It also serves as the middle layer between the frontend and the database, handling requests from the frontend and fetching and processing data housed in the database.  Additionally, in interacts with external serves via established interfaces (in this document labeled “gateways” so not to be confused with Java interfaces).  
+
+<ins>Backend API</ins> – The Backend API routes requests from the frontend to the functionality of the backend via REST API calls.  The REST calls are also another step in security framework, as they ensure that only users who are authorized and authenticated can access them (and thereby access the data and functionality in the backend ).  
+
+<ins>Security Component</ins> – Security is critical with the System, as it houses confidential borrower data (potentially include PII), privileged financial information, and banking information.  The following are the subcomponents of the security component and their responsibilities:
+-	<ins>Authentication</ins> – Due to the security requirements, instead of using an external service provider such as Facebook or Google, the decision was made to keep authentication within the system.  While external service providers are secure, regulators may prefer an in-system solution
+-	<ins>Multi-Factor Authentication</ins> – The decision was made to utilize MFA as another layer of security to ensure that users are who they say they are.  As this is not the primary layer of security and due to the complexity of setting up an MFA system, the decision was made to use an external provider.
+-	<ins>Role Based Policy Control</ins> – As different users will have different levels of view and modify access based on their responsibilities, the decision was made to implement a Role Based Policy Control.  This will allow the System Administrator to assign a role to a user that will limit their access to only those areas of the system that they have privileges to access *(GeeksforGeeks, n.d.)*.
+-	<ins>Encryption/Decryption</ins> – While the cloud provider will provide encryption for both data at rest and in transit, the System will have an internal layer of encryption to encrypt sensitive information (PII, banking data, etc.) before it reaches AWS.  
+
+<ins>Business Logic Components</ins> – Due to the size and complexity of the System it is useful to logically group functionality together.  These groupings are highly cohesive and their interactions with other components are few and well defined. The components are as follows:
+-	<ins>Mortgage Tracking</ins> – The Mortgage Tracking component is a grouping of subcomponents that allow the user (primarily the Loan Analyst) to create and update the terms of a Mortgage.  The two subcomponents are *Input and Validation*, which handles all mortgage on-boarding and editing, and *Calculation*, which handles the complex calculation mechanics of mortgage amortization.
+-	<ins>Credit</ins> – The Credit component is a grouping of subcomponents that allow those involved in the credit function to utilize the System.  It includes the *Dashboard* subcomponent, a functionality that was previously described, a *Portfolio Reporting* subcomponent, which would be responsible for generating portfolio level reports as opposed to loan level reports, and the *Credit Modification* subcomponent, which would give the Credit team limited modification ability of the loans (primary around internal classification and commentary) via their dashboard.  
+-	<ins>Billing and Servicing</ins> – The Billing and Servicing component is a grouping of subcomponents that encapsulates much of the functionality of the Treasury Analyst and Billing Analyst actors.  The two are very closely related, as the *Billing* subsystem is responsible for creating and sending invoices to the Customer and the *Treasury* subsystem is responsible for forecasting the cashflows of the Loans (including from the data on the invoices).  
+-	<ins>Accounting</ins> – The Accounting component is a grouping of subcomponents that is responsible for the accounting functionality of the System.  This includes *Journal Entry Generation*, a subcomponent that is responsible for the calculation and organization of Journal Entries; *Financial Reporting*, a subcomponent that is responsible for all accounting level financial reporting for the Loans; and *Forecasting*, a subcomponent that is responsible for generating and displaying accounting income forecast (not to be confused with cash forecasting).
+-	<ins>Interfaces</ins> – As many of the submodules interact with external components, interfaces have been established to promote loose coupling and separation of concerns between the subcomponents and the external systems.
+
+### Database
+
+The Database represents the main data store for the system, which will be a RDBMS, due to the highly structured nature of the System.  The Database will be described in more detail in the Cloud Deployment Diagram.  The Database Component interacts with all backend components via an interface to promote loose coupling between the components and the database. 
+
 
 ## Diagram
 
