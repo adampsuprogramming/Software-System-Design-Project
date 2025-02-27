@@ -229,7 +229,67 @@ Finally, the use case diagram was generated from the interactions elaborated in 
 
 # UML Domain Model
 
-## Introduction
+## Conceptual Class Identification
+
+The Domain Model was developed using a brainstorming exercise where a concept category list is used to identify potential conceptual classes for the Domain Model. Conceptual classes should represent real things in the problem domain.
+
+| **Conceptual Class Category**                            | **Conceptual Class Example**                                                                                                                                                                      |
+|----------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Physical or Tangible Objects**                        | Collateral                                                                                                                                                                                    |
+| **Specifications, Designs or Descriptions of Things**  | Loan Details, Commentary                                                                                                                                                                     |
+| **Places**                                             | Collateral, Borrower Business Address                                                                                                                                                        |
+| **Transactions**                                       | Loan Closing, Invoice, Loan Payoff, Loan Default                                                                                                                                             |
+| **Transaction Line Items**                             | Monthly Interest, Monthly Principal, Principal Remaining, Closing Fees, Ongoing Fees                                                                                                         |
+| **Roles of People**                                    | Loan Analyst, Loan Accountant, Billing Analyst, Credit Officer, Treasury Analyst, Customer Contact, Auditor, Regulatory, Management, Legal, User                                             |
+| **Containers of Other Things**                         | Invoice, Journal Entry, Dashboard, Portfolio, Cash Flows, Database                                                                                                                           |
+| **Things in a Container**                              | Loan (Portfolio), Principal Due (Invoice), Interest Due (Invoice), Journal Entry (Accounting Report), Journal Entry Line Items (Journal Entry), Loan Covenants (Loan Credit Analysis), Cash Flow Line Item |
+| **Other Computers/Systems (external)**                 | Reporting System, Corporate Accounting System, Email System, Banking Software                                                                                                                |
+| **Abstract Noun Concepts**                             | Interest Rate, Financial Information, Loan Covenants, Dashboard, Commentary, Borrower, Amortization, Loan Details                                                                          |
+| **Organizations**                                      | SEC                                                                                                                                                                                          |
+| **Events**                                            | Default, Accounting Close, Foreclosure, Loan Closing                                                                                                                                         |
+| **Processes**                                         | Banking System Transmission, Accounting System Transmission, Email System Transmission, Reporting System Transmission                                                                       |
+| **Rules and Policies**                                | GAAP, Dodd-Frank Act, AML Policies                                                                                                                                                           |
+| **Catalogs**                                          | General Ledger Account Catalogue, Consolidation Tree                                                                                                                                         |
+| **Records of Finance, Work, Contracts, Legal Matters** | Invoice, Loan Documentation, Commentary, Loan Covenants                                                                                                                                      |
+| **Financial Instruments and Services**                | Commercial Mortgage Loan                                                                                                                                                                     |
+| **Manuals, Books, Documents, Reference Papers**       | Loan Documentation                                                                                                                                                                           |
+
+## Class Pruning
+
+After possible conceptual classes have been identified, the list is pruned to remove classes that are not appropriate for the domain model.  Below is a brief analysis of those classes that have been kept and those classes that were pruned.  
+
+### Kept Classes
+
+Address (Shortened from Borrower Business Address), Amortization, Banking Software, Billing Analyst, Borrower, Cash Flow Line Item, Cash Flows, Collateral, Commentary, Corporate Accounting System (renamed to Corp Acc Sys Gateway), Credit Officer, Customer Contact, Dashboard, Database (renamed to Database Access) Email System (renamed to Email Gateway), Financial Information, Invoice, Journal Entry, Journal Entry Line Items, Loan, Loan Accountant, Loan Analyst, Loan Details, Portfolio, Reporting System (Renamed to Reporting Sys Gateway), Treasury Analyst, User
+
+### Pruned Classes
+
+**Irrelevant Classes**
+
+The following classes were pruned because they are not relevant as classes in the System or because they are not Primary or Supporting Actors:
+GAAP, Dodd-Frank Act, AML Policies, SEC, Loan Documentation, Consolidation Tree, Auditor, Regulatory, Management, Legal
+
+**Implementation Specific Classes**
+
+The following classes represent processes that will occur and will be captured in the Banking, Reporting, Accounting, and Email Gateway classes:
+Banking System Transmission, Accounting System Transmission, Email System Transmission, Reporting System Transmission
+
+**Attributes**
+
+The following concepts (or modifications thereof) are used as attributes in the System:
+Interest Rate, Loan Covenants, Default, Accounting Close, Foreclosure, Loan Closing, General Ledger Account Catalogue, Principal Due, Interest Due, Loan Payoff, Principal Remaining, Closing Fees, Ongoing Fees
+
+**Redundant Classes**
+
+The following redundant classes were pruned: 
+Monthly Interest (Redundant with Interest Due), Monthly Principal (Redundant with Principal Due), Commercial Mortgage Loan (Redundant with Loan)
+
+## Domain Model Creation
+Once the conceptual class list has been pruned, the Domain Model is drawn.  Attributes are listed for the conceptual classes, associations and dependencies are drawn and multiplicity is added on both ends of the associations/dependencies.
+
+## Additional Notes
+Note that to keep the Domain Model up to date with the Design Class Model, certain additional classes were added in (specifically the Treasury Handler, Accounting Handler, Billing Handler, and Dashboard Handler classes), which are all Pure Fabrications. These classes add value to the Domain Model as they demonstrate how the users interact with the System.  On the other hand, the Simple Factory classes are shown in the Design Class Diagram, but intentionally omitted from Domain Model, as they serve no purpose in the problem domain and are purely implementation classes. 
+
 
 ## Diagram
 
