@@ -510,6 +510,9 @@ Please click on above image for a full size version
 
 ### Exhibits
 
+![Entity Relationship Diagram](/Images/Entity_Relationship_Diagram.png)
+Please click on above image for a full size version
+
 # Design Patterns
 
 Throughout the design of the System, multiple design patterns have been utilized.  While some of these design patterns were listed in the explanations of the individual diagrams in this document, the below serves to consolidate the explanations into one location.
