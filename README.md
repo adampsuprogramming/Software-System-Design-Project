@@ -260,7 +260,7 @@ After possible conceptual classes have been identified, the list is pruned to re
 
 ### Kept Classes
 
-Address (Shortened from Borrower Business Address), Amortization, Banking Software, Billing Analyst, Borrower, Cash Flow Line Item, Cash Flows, Collateral, Commentary, Corporate Accounting System (renamed to Corp Acc Sys Gateway), Credit Officer, Customer Contact, Dashboard, Database (renamed to Database Access) Email System (renamed to Email Gateway), Financial Information, Invoice, Journal Entry, Journal Entry Line Items, Loan, Loan Accountant, Loan Analyst, Loan Details, Portfolio, Reporting System (Renamed to Reporting Sys Gateway), Treasury Analyst, User
+Address (Shortened from Borrower Business Address), Amortization Line Item, Amortization Schedule, Banking Software, Billing Analyst, Borrower, Cash Flow Line Item, Cash Flows, Collateral, Commentary, Corporate Accounting System (renamed to Corp Acc Sys Gateway), Credit Officer, Customer Contact, Dashboard, Database (renamed to Database Access) Email System (renamed to Email Gateway), Financial Information, Invoice, Journal Entry, Journal Entry Line Items, Loan, Loan Accountant, Loan Analyst, Loan Details, Portfolio, Reporting System (Renamed to Reporting Sys Gateway), Treasury Analyst, User
 
 ### Pruned Classes
 
