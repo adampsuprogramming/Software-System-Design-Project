@@ -104,6 +104,58 @@ The following table describes the target users of the System (the “Primary Act
 | Decrease in realized losses of 10 percent in the next three years                                                                         | Integrating loan credit reporting directly into the System and decreasing time in processing borrower financial information (as per above).                                                                                                                |
 | Shortening loan onboarding process by 25 percent over the next three years                                                                 | Similar to processing financial information, efficiencies will be created by moving onto a modern system, including modern GUI, system response time, and built in workflows.                                                                      |
 | Decreasing overnight cash balances by 50 percent over next two years                                                                       | Providing accurate cash forecasting information to Treasury, allowing them to better forecast cash balances and pay down short-term debt.                                                                                                                   |
+## Non-Functional Requirements
+
+### Performance Requirements
+
+The performance requirements of the System align with Management’s business goals (described above) to improve process efficiency. The table below outlines these NFRs (*Chisel Labs, 2023*; *GeeksforGeeks, 2025*; *Sree, 2020*).
+
+| **NFR Type**                        | **NFR Description**                                                                                                                                       |
+|-------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Response Time**                   | 95% of user requests must be processed and returned in under 1 second                                                                                     |
+| **Scalability**                     | 100 concurrent users must be supported without any noticeable performance degradation (this is equal to the maximum concurrent users expected for the System plus a buffer as per Management). |
+| **Throughput / Transactions Per Second** | The System shall process a minimum of 50 transactions per second                                                                                           |
+| **Latency**                         | Round Trip Time (RTT) shall not exceed 100ms for 95 percent of transactions                                                                                 |
+
+---
+
+### Security Requirements
+
+Due to the sensitive banking data and PII stored and accessed via the System, Security is a top NFR concern of Management. The table below outlines these NFRs (*Dilmegani & Alp, 2025*; *Sree, 2020*).
+
+| **NFR Type**              | **NFR Description**                                                                                                                                                                                                                                             |
+|---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Authentication**        | The System shall incorporate MFA authentication to ensure that a user’s identity is verified. <br><br>The System shall meet or exceed ISO 27001 standards for password policies.                                                                              |
+| **Authorization**         | System shall implement a RBAC solution to control access to sensitive or privileged data                                                                                                                                |
+| **Data at Rest Encryption** | AES-256 or greater                                                                                                                                                                                                                                                  |
+| **Data in Transit Encryption** | TLS 1.2 or greater                                                                                                                                                                                                                                                  |
+| **Firewall**              | Web application firewall required that meets or exceeds all GDPRS and ISO 27001 standards                                                                                                                                |
+| **GDPRS Requirements**    | System shall meet or exceed all GDPRS requirements                                                                                                                                                                                                               |
+
+---
+
+### Maintainability Requirements
+
+Management has emphasized maintainability of the System, due to expected acquisitions and other expanded growth. They have also stipulated the formulation of a detailed testing strategy, due to the critical nature of the System (*Lenovo, n.d.*; *BrowserStack, 2024*; *OpenText, n.d.*)
+
+| **NFR Type**         | **NFR Description**                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Code Modularity**  | The code base shall be segregated into logical and independent modules or components to facilitate testing and maintainability.                                                                                                                                                                                                                                                                                                           |
+| **Documentation**    | The System design and code shall be documented in a clear and concise manner using an online blog format such as GitHub Markdown, in-line documentation, and use cases.<br><br>Code shall be documented within individual code files so that a junior developer can understand the purpose of 95 percent of code within 5 minutes of analyzing it.<br><br>APIs shall be documented via Swagger.           |
+| **Testing Strategy** | **Unit Test Coverage:** At least 80 percent of code base should be covered using Unit Tests (using a framework such as Jest, Jasmine, Junit, etc.)<br><br>**System Testing:** System testing shall be automated using a framework such as Cypress or Selenium<br><br>**CI/CD:** Unit and System Testing shall be automated using a CI/CD workflow such as GitHub Actions<br><br>**API Testing:** Automated using a framework such as Postman<br><br>**Logging and Monitoring:** Consolidated using a tool such as Splunk<br><br>**Performance Testing:** The response time of the System under normal and peak loads shall be tested using automated toolsets<br><br>**User Acceptance Testing:** Based on Use Cases and any user stories and shall be run prior to System go-live. |
+
+---
+
+### Other Relevant Non-Functional Requirements
+
+The following are additional NFRs not covered in the above sections:
+
+| **NFR Type**                         | **NFR Description**                                                                                                                                                                                                  |
+|--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Availability**                     | The System shall maintain 99.9% availability between the hours of 7am EST and 11pm EST on weekdays and 99% availability otherwise (excluding scheduled maintenance windows)                               |
+| **Recovery Time Objective (RTO)**    | 4 Hours (System is considered mission critical by Management)                                                                                                                                                      |
+| **RPO (Recovery Point Objective)**   | 30 Minutes (Due to the transactional nature of the business, any data loss of greater than 30 minutes is deemed unacceptable by Management)                                                                               |
+| **Data Retention**                   | All data must be retained for a minimum of seven years in accordance with the Company’s data retention standards                                                                                                      |
 
 
 
@@ -555,7 +607,7 @@ Larman, C. (2005). *Applying UML and Patterns: An Introduction to Object-Oriente
 
 IBM. (n.d.). *Three-tier architecture*. Retrieved February 26, 2025, from https://www.ibm.com/think/topics/three-tier-architecture
 
-GeeksforGeeks. (n.d.). *Security in distributed system*. Retrieved February 26, 2025, from https://www.geeksforgeeks.org/security-in-distributed-system/#authentication-mechanisms-in-distributed-system
+GeeksforGeeks. (2024, July 23). *Security in distributed system*. Retrieved February 26, 2025, from https://www.geeksforgeeks.org/security-in-distributed-system/#authentication-mechanisms-in-distributed-system
 
 Martin, R. (1996). *Class design principles*. Object Mentor.
 
@@ -567,6 +619,19 @@ Amazon Web Services. (n.d.-c). *Service Auto Scaling for Amazon ECS. AWS Documen
 
 Amazon Web Services. (n.d.-d). *Amazon Aurora*. AWS. Retrieved February 27, 2025, from https://aws.amazon.com/rds/aurora/
 
+Chisel Labs. (2023, June 19). *What is non-functional requirements?* Chisel Labs. Retrieved March 1, 2025, from https://chisellabs.com/glossary/what-is-non-functional-requirements/
+
+GeeksforGeeks. (2025, February 1). *Non-functional requirements in software engineering.* Retrieved March 1, 2025, from https://www.geeksforgeeks.org/non-functional-requirements-in-software-engineering/
+
+Dilmegani, C., & Alp, E. (2025, February 22). *Key components of firewall compliance: Guidance in 2025.* AIMultiple. Retrieved March 1, 2025, from https://research.aimultiple.com/firewall-compliance/ 
+
+Sree. (2020, August 16). *Non-functional requirements basics. Technical Program Management.* Retrieved March 1, 2025, from https://technicalprogrammanager.com/non-functional-requirements-basics/
+
+Lenovo. (n.d.). *Modularity: What is it and how does it enhance business productivity?* Retrieved March 1, 2025, from https://www.lenovo.com/us/en/glossary/modularity/
+
+BrowserStack. (2024, September 22). *NFRs: What is Non Functional Requirements (Example & Types)*. https://www.browserstack.com/guide/non-functional-requirements-examples
+
+OpenText. (n.d.). *What is performance testing?* OpenText. Retrieved March 1, 2025, from https://www.opentext.com/what-is/performance-testing
 
 
 
