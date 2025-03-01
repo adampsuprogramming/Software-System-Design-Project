@@ -594,13 +594,16 @@ The Pure Fabrication and Indirection support the Low Coupling principle, since t
 While the Simple Factory Pattern is *NOT A GOF PATTERN*, it fits neatly into the design of the System.  The goal of the Simple Factory Pattern is move the logic of object creation to a separate class in order to promote better cohesion amongst the classes that would otherwise create the objects.  So, by introducing the LoanFactory class, neither the DashboardManager nor the InvoiceProcessor classes need to know how to create a Loan object, which might involve complex logic.  Instead, they can call the LoanFactory class, which will do so for them.
 
 ## Singleton Pattern
-*Note that the while the Singleton Pattern is not explicitly used in the diagrams due to scope limitations, it will be useful while implementing the system.*  The Singleton GOF pattern ensures that multiple instances of commonly used objects are not created (i.e. only one instance of it exists for all objects to access).  This pattern will be useful when creating those objects such as the Gateway objects described previously that should not be created each time another object wants to use it, thus reducing the memory required for the System and increasing performance.  It also simplifies the System, since creation logic only needs to be called once.
+The Singleton GOF pattern ensures that multiple instances of commonly used objects are not created (i.e. only one instance of it exists for all objects to access).  This pattern will be useful when creating those objects such as the Gateway objects described previously that should not be created each time another object wants to use it, thus reducing the memory required for the System and increasing performance.  It also simplifies the System, since creation logic only needs to be called once.  While not explicitly shown in the UML charts due to scope, examples of the implementation of this pattern can be found in the Skeleton classes. 
 
 ## Three-Tier Architecture 
 While not explicitly detailed in the module, the three-tier architecture of the presentation later, logic layer, and data layer, is a commonly used pattern in System Architecture that helps with development (since each tier can be worked on separately), scalability (since the tiers can scale independently from each other), and separation of concerns *(IBM, n.d.).*
 
 ## Data Replication Design Pattern
 The Data Replication design pattern is being used (as further explained in the AWS Cloud Deployment section) to replicate the database across two AWS regions.  This pattern was chosen for increased availability in the event of a failure and increased performance, since users will use the replica that that is closest to their location.  It is being used as this data is critical to the operations of the Company.
+
+## Well Architected Framework Pillars
+Throughout the design, there has been an emphasis on the Operational Excellence, Security, Reliability, and Performance Efficiency pillars of the AWS Well-Architected Framework.  The initial elicitation and documentation of NFRs helped focus the design on these attributes.  
 
 # References
 Larman, C. (2005). *Applying UML and Patterns: An Introduction to Object-Oriented Analysis and Design and Iterative Development* (3rd ed.). Pearson.
