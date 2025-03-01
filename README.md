@@ -381,32 +381,28 @@ Please click on above image for a full size version
 
 # Sequence Diagrams
 
-## Introduction
-
-## Diagrams
-
-### Sequence Diagram 1 - generateReport(List<selections>) from the Perform Accounting Procedures SSD
+## Sequence Diagram 1 - generateReport(List<selections>) from the Perform Accounting Procedures SSD
 
 The below SD details the generateReport(List<selections>) method from the Perform Accounting Procedures SSD.  It demonstrates the internal and external interactions required to generate a report detailing journal entries for a specified period.  The majority of the functionality is orchestrated by the JournalEntryProcessor.  After receiving a request for the report with a list of specifications, the JournalEntryProcessor class utilizes the DatabaseAccess class to interact with the Database and retrieve the required journal entries.  Once the journal entries are retrieved, the JournalEntryProcessor class parses them into the required format and then uses the JournalEntryFactory class to create JournalEntry objects and the associated JournalEntryLineItem objects.  The JournalEntryLineItem objects are added to their respective JournalEntry objects and these objects are added to a list.  The JournalEntryProcessor class then sends the list of JournalEntry objects to the ReportSysGateway, which interacts with the external Reporting System to generate the formatted report of journal entries and return it.
 
 ![SD Acc Report](/Images/Sequence_Diagrams-AccReport.png)
 Please click on above image for a full size version
 
-### Sequence Diagram 2 - Selection of Methods from the Analyze Portfolio Metrics SSD
+## Sequence Diagram 2 - Selection of Methods from the Analyze Portfolio Metrics SSD
 
 The below SD details a selection of methods from the Analyze Portfolio Metrics SSD.   It demonstrates the internal and external interactions required to generate the reporting dashboard utilized by the Credit Officers.  It further details interactions required to email the commentary written by the Credit Officers to the users that they tag.  The majority of the functionality is orchestrated by the DashboardManager class.  After receiving a request to generate a dashboard with a list of specifications, the DashboardManager class utilizes the DatabaseAccess class to interact with the database and retrieve the dashboard data.  When it receives this data, it first parses it into the required format and then uses the LoanFactory class to create the Loan object associated with the requested dashboard.  The DashboardManager class sends the parsed data to the ReportSysGateway class, which interacts with the external Reporting System to generate the formatted dashboard (in a format that the frontend can use to display the Dashboard, such as HTML), and returns it.  
 
 ![SD Dashboard](/Images/Sequence_Diagrams-Dashboard.png)
 Please click on above image for a full size version
 
-### Sequence Diagram 3 - Selection of Methods from the Generate Customer Invoices SSD
+## Sequence Diagram 3 - Selection of Methods from the Generate Customer Invoices SSD
 
 The below SD details a selection of methods from the Generate Customer Invoices SSD.  It demonstrates the internal and external interactions required to generate invoices and email them to the Customers.  The majority of the functionality is orchestrated by the InvoiceProcessor class.  After receiving a request to generate invoices along with a list of selections,  the InvoiceProcessor class utilizes the DatabaseAccess class to interact with the database and the retrieve the appropriate data.  After receiving the data, the InvoiceProcessor class parses it into the required format and then utilizes the LoanFactory class to make a Loan objects (which will be used later in the process).  It then creates Invoice objects for each loan that was selected and adds them to a list.  InvoiceProcessor then returns the list of invoices to the billing analyst.  After the billing analyst reviews the invoices for accuracy, they initiate the finalizeInvoices(message) method. InvoiceProcessor sends the list of invoices, the list of sections, and the message to the EmailSystemGateway class, which formats and transmits the emails to the Customers.  After receiving confirmation that the invoices were sent, InvoiceProcessor then adds the Invoice objects to their respective loans objects and uses the DatabaseAccess class to update the database.  
 
 ![SD Invoice](/Images/Sequence_Diagrams-Invoice.png)
 Please click on above image for a full size version
 
-### Sequence Diagram 4 - Selection of Methods from the Generate Cash Flow Data SSD
+## Sequence Diagram 4 - Selection of Methods from the Generate Cash Flow Data SSD
 
 The below SD details a selection of methods from the Generate Cash Flow Data SSD.  It demonstrates the internal and external interactions required to create a report of forecasted cash flow data and send the data to the external Banking Software.  The majority of the functionality is orchestrated by the TreasuryReportProcessor class.  After receiving a request to generate a report of cash flow data along with a list of selections,  the TreasuryReportProcessor class utilizes the DatabaseAccess class to interact with the database and the retrieve the appropriate data.  After receiving the data, the TreasuryReportProcessor class parses it into the required format and sends it to the ReportSysGateway class.  The ReportsSysGateway class then formats it and sends it to the Reporting System which returns a formatted report of forecasted cash flows.  It sends this report to the frontend for the Treasury Analyst to review.  After reviewing, the Treasury Analyst uses the transmitToBank() method in TreasuryReportProcessor to forward the data to the BankSoftwareGateway class.  This class structures the data in the appropriate format and sends it to the external Banking Software, which returns a confirmation.
 
