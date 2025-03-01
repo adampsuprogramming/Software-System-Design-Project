@@ -568,7 +568,9 @@ Please click on above image for a full size version
 
 ### Introduction
 
-### Exhibits
+The diagram below details a selection of the database tables required for the System.  The tables are documented using an Entity Relationship Diagram, which shows the connections between tables via Primary and Foreign keys, as well at the multiplicity of the relationships.  As previously described, the System will utilize a relational database.
+
+### Database Tables Definition Diagram
 
 ![Entity Relationship Diagram](/Images/Entity_Relationship_Diagram.png)
 Please click on above image for a full size version
