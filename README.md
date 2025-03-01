@@ -335,7 +335,7 @@ The below SD details the generateReport(List<selections>) method from the Perfor
 ![SD Acc Report](/Images/Sequence_Diagrams-AccReport.png)
 Please click on above image for a full size version
 
-#### Sequence Diagram 2 - Selection of Methods from the Analyze Portfolio Metrics SSD
+### Sequence Diagram 2 - Selection of Methods from the Analyze Portfolio Metrics SSD
 
 The below SD details a selection of methods from the Analyze Portfolio Metrics SSD.   It demonstrates the internal and external interactions required to generate the reporting dashboard utilized by the Credit Officers.  It further details interactions required to email the commentary written by the Credit Officers to the users that they tag.  The majority of the functionality is orchestrated by the DashboardManager class.  After receiving a request to generate a dashboard with a list of specifications, the DashboardManager class utilizes the DatabaseAccess class to interact with the database and retrieve the dashboard data.  When it receives this data, it first parses it into the required format and then uses the LoanFactory class to create the Loan object associated with the requested dashboard.  The DashboardManager class sends the parsed data to the ReportSysGateway class, which interacts with the external Reporting System to generate the formatted dashboard (in a format that the frontend can use to display the Dashboard, such as HTML), and returns it.  
 
