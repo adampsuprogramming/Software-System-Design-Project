@@ -188,6 +188,7 @@ The use cases listed were further illustrated through the documentation of SSDs,
 ### SSD for Use Case 1
 
 ![SSD1](/Images/SSD-Loan_Details.png)
+Please click on above image for a full size version
 
 ### Use Case 2
 
@@ -208,6 +209,7 @@ The use cases listed were further illustrated through the documentation of SSDs,
 ### SSD for Use Case 2
 
 ![SSD2](/Images/SSD-Perform_Acct_Proc.png)
+Please click on above image for a full size version
 
 ### Use Case 3
 
@@ -228,6 +230,7 @@ The use cases listed were further illustrated through the documentation of SSDs,
 ### SSD for Use Case 3
 
 ![SSD3](/Images/SSD-Generate_Cust_Inv.png)
+Please click on above image for a full size version
 
 ### Use Case 4
 
@@ -248,6 +251,7 @@ The use cases listed were further illustrated through the documentation of SSDs,
 ### SSD for Use Case 4
 
 ![SSD4](/Images/SSD-Analyze_Portfolio_Metrics.png)
+Please click on above image for a full size version
 
 ### Use Case 5
 
@@ -269,6 +273,7 @@ The use cases listed were further illustrated through the documentation of SSDs,
 ### SSD for Use Case 5
 
 ![SSD5](/Images/SSD-Generate_Cash_Flow_Data.png)
+Please click on above image for a full size version
 
 ## Use Case Diagram Introduction
 
