@@ -564,6 +564,10 @@ Please click on above image for a full size version
 
 ### Exhibits
 
+[DashboardManager.java](/skeleton_classes/DashboardManager.java)
+[DatabaseAccess.java](/skeleton_classes/DatabaseAccess.java)
+[JournalEntryProcessor.java](/skeleton_classes/JournalEntryProcessor.java)
+
 ## Database Tables
 
 ### Introduction
