@@ -562,15 +562,14 @@ Please click on above image for a full size version
 
 The following classes are further detailed via Skeleton classes: 
 
-**Dashboard Manager** - Chosen due to its importance in managing the credit reporting functionality of the System
-[DashboardManager.java](/skeleton_classes/DashboardManager.java)
+### Dashboard Manager
+Chosen due to its importance in managing the credit reporting functionality of the System - [DashboardManager.java](/skeleton_classes/DashboardManager.java)
 
+### Database Access
+Chosen due to its usage by multiple other classes in the System as an intermediary between those classes and the Database -  [DatabaseAccess.java](/skeleton_classes/DatabaseAccess.java)
 
-**Database Access** - Chosen due to its usage by multiple other classes in the System as an intermediary between those classes and the Database
-[DatabaseAccess.java](/skeleton_classes/DatabaseAccess.java)
-
-**JournalEntryProcessor** - Chosen due to its importance in orchestrating the accounting functionality of the System.
-[JournalEntryProcessor.java](/skeleton_classes/JournalEntryProcessor.java)
+### JournalEntryProcessor
+Chosen due to its importance in orchestrating the accounting functionality of the System - [JournalEntryProcessor.java](/skeleton_classes/JournalEntryProcessor.java)
 
 ## Database Tables
 
