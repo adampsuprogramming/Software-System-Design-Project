@@ -313,7 +313,7 @@ The Domain Model was developed using a brainstorming exercise where a concept ca
 
 ## Class Pruning
 
-After possible conceptual classes have been identified, the list is pruned to remove classes that are not appropriate for the domain model.  Below is a brief analysis of those classes that have been kept and those classes that were pruned.  
+After possible conceptual classes have been identified, the list is pruned to remove classes that are not appropriate for the Domain Model.  Below is a brief analysis of those classes that were kept and those classes that were pruned.  
 
 ### Kept Classes
 
@@ -342,7 +342,7 @@ The following redundant classes were pruned:
 Monthly Interest (Redundant with Interest Due), Monthly Principal (Redundant with Principal Due), Commercial Mortgage Loan (Redundant with Loan)
 
 ## Domain Model Creation
-Once the conceptual class list has been pruned, the Domain Model is drawn.  Attributes are listed for the conceptual classes, associations and dependencies are drawn and multiplicity is added on both ends of the associations/dependencies.
+Once the conceptual class list has been pruned, the Domain Model is diagramed.  Attributes are listed for the conceptual classes, associations and dependencies are drawn and multiplicity is added on both ends of the associations/dependencies.
 
 ## Additional Notes
 Note that to keep the Domain Model up to date with the Design Class Model, certain additional classes were added in (specifically the Treasury Report Processor, Journal Entry Processor, Invoice Processor, and Dashboard Manager classes), which are all Pure Fabrications. These classes add value to the Domain Model as they demonstrate how the users interact with the System.  On the other hand, the Simple Factory classes are shown in the Design Class Diagram, but intentionally omitted from Domain Model, as they serve no purpose in the problem domain and are purely implementation classes.  
