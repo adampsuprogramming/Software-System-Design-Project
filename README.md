@@ -152,7 +152,7 @@ The following are additional NFRs not covered in the above sections:
 |--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Availability**                     | The System shall maintain 99.9% availability between the hours of 7am EST and 11pm EST on weekdays and 99% availability otherwise (excluding scheduled maintenance windows)                               |
 | **Recovery Time Objective (RTO)**    | 4 Hours (System is considered mission critical by Management)                                                                                                                                                      |
-| **RPO (Recovery Point Objective)**   | 30 Minutes (Due to the transactional nature of the business, any data loss of greater than 30 minutes is deemed unacceptable by Management)                                                                               |
+| **Recovery Point Objective (RPO)**   | 30 Minutes (Due to the transactional nature of the business, any data loss of greater than 30 minutes is deemed unacceptable by Management)                                                                               |
 | **Data Retention**                   | All data must be retained for a minimum of seven years in accordance with the Company’s data retention standards                                                                                                      |
 
 
