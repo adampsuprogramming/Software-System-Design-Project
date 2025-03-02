@@ -1,0 +1,324 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.16 Chrome/132.0.6834.196 Electron/34.2.0 Safari/537.36" version="26.0.16">
+  <diagram name="Page-1" id="58cdce13-f638-feb5-8d6f-7d28b1aa9fa0">
+    <mxGraphModel dx="2074" dy="1244" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-1" value="Performing" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#ffffc0;strokeColor=#ff0000;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" parent="1" vertex="1">
+          <mxGeometry x="90" y="109" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-2" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;direction=south;" parent="1" vertex="1">
+          <mxGeometry y="124" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-3" style="edgeStyle=orthogonalEdgeStyle;html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="kla2jWYUcWB-ETQLTV-u-2" target="kla2jWYUcWB-ETQLTV-u-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="75" y="770" as="sourcePoint" />
+            <mxPoint x="135" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-5" value="Payment&lt;div&gt;Default&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#ffffc0;strokeColor=#ff0000;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" parent="1" vertex="1">
+          <mxGeometry x="616" y="543" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-6" value="Coveant Default" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#ffffc0;strokeColor=#ff0000;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" parent="1" vertex="1">
+          <mxGeometry x="363" y="342" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-9" value="Foreclosure" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#ffffc0;strokeColor=#ff0000;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" parent="1" vertex="1">
+          <mxGeometry x="866" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-10" value="Delinquent" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#ffffc0;strokeColor=#ff0000;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" parent="1" vertex="1">
+          <mxGeometry x="373" y="543" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-11" value="Repaid" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#ffffc0;strokeColor=#ff0000;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" parent="1" vertex="1">
+          <mxGeometry x="726" y="109" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-14" style="html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="kla2jWYUcWB-ETQLTV-u-1" target="kla2jWYUcWB-ETQLTV-u-11" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="345" y="139" as="sourcePoint" />
+            <mxPoint x="435" y="155" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-15" value="On-Time&lt;div&gt;Payments&lt;/div&gt;&lt;div&gt;Made&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="kla2jWYUcWB-ETQLTV-u-14" vertex="1" connectable="0">
+          <mxGeometry x="-0.0872" relative="1" as="geometry">
+            <mxPoint x="-324" y="-85" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-16" style="html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;entryX=0;entryY=0.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" parent="1" source="kla2jWYUcWB-ETQLTV-u-11" target="kla2jWYUcWB-ETQLTV-u-18" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="226" y="149" as="sourcePoint" />
+            <mxPoint x="706" y="139" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-17" value="Loan Paid in Full" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="kla2jWYUcWB-ETQLTV-u-16" vertex="1" connectable="0">
+          <mxGeometry x="-0.0872" relative="1" as="geometry">
+            <mxPoint x="-487" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-18" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" parent="1" vertex="1">
+          <mxGeometry x="926" y="124" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-22" style="html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="kla2jWYUcWB-ETQLTV-u-1" target="kla2jWYUcWB-ETQLTV-u-10" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="131.03999999999996" y="168.9999999999999" as="sourcePoint" />
+            <mxPoint x="370" y="589" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="120" y="588" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-23" value="Payment Missed" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="kla2jWYUcWB-ETQLTV-u-22" vertex="1" connectable="0">
+          <mxGeometry x="-0.0872" relative="1" as="geometry">
+            <mxPoint x="140" y="104" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-26" style="html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="kla2jWYUcWB-ETQLTV-u-10" target="kla2jWYUcWB-ETQLTV-u-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="432.58" y="502" as="sourcePoint" />
+            <mxPoint x="432.58" y="592" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-27" value="Grace Period Expired" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="kla2jWYUcWB-ETQLTV-u-26" vertex="1" connectable="0">
+          <mxGeometry x="-0.0872" relative="1" as="geometry">
+            <mxPoint x="4" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-30" value="Restructured" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#ffffc0;strokeColor=#ff0000;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" parent="1" vertex="1">
+          <mxGeometry x="616" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-31" style="html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;entryX=0.75;entryY=1;entryDx=0;entryDy=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" parent="1" source="kla2jWYUcWB-ETQLTV-u-5" target="kla2jWYUcWB-ETQLTV-u-30" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="466" y="398" as="sourcePoint" />
+            <mxPoint x="536" y="598" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-32" value="Amendment&amp;nbsp;&lt;div&gt;Agreed Upon&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="kla2jWYUcWB-ETQLTV-u-31" vertex="1" connectable="0">
+          <mxGeometry x="-0.0872" relative="1" as="geometry">
+            <mxPoint x="35" y="33" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-33" style="html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="kla2jWYUcWB-ETQLTV-u-5" target="kla2jWYUcWB-ETQLTV-u-9" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="511.66999999999996" y="619" as="sourcePoint" />
+            <mxPoint x="751.67" y="469" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="926" y="573" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-34" value="Amendment Not&lt;div&gt;&amp;nbsp;Agreed Upon&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="kla2jWYUcWB-ETQLTV-u-33" vertex="1" connectable="0">
+          <mxGeometry x="-0.0872" relative="1" as="geometry">
+            <mxPoint x="-39" y="-16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-35" style="html=1;labelBackgroundColor=none;endArrow=none;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;startArrow=open;startFill=0;startSize=8;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="171" as="sourcePoint" />
+            <mxPoint x="373" y="560" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="130" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-36" value="Paid Within Grace Period" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="kla2jWYUcWB-ETQLTV-u-35" vertex="1" connectable="0">
+          <mxGeometry x="-0.0872" relative="1" as="geometry">
+            <mxPoint x="130" y="91" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-37" style="html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" parent="1" source="kla2jWYUcWB-ETQLTV-u-1" target="kla2jWYUcWB-ETQLTV-u-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="181" y="-100" as="sourcePoint" />
+            <mxPoint x="240" y="80" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="120" y="80" />
+              <mxPoint x="180" y="80" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-39" style="html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;entryX=0;entryY=0.75;entryDx=0;entryDy=0;exitX=0.656;exitY=1.011;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="kla2jWYUcWB-ETQLTV-u-1" target="kla2jWYUcWB-ETQLTV-u-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="186.28" y="169" as="sourcePoint" />
+            <mxPoint x="421" y="281.30000000000007" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="169" y="387" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-40" value="Covenant Breach" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="kla2jWYUcWB-ETQLTV-u-39" vertex="1" connectable="0">
+          <mxGeometry x="-0.0872" relative="1" as="geometry">
+            <mxPoint x="101" y="22" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-42" style="html=1;labelBackgroundColor=none;endArrow=none;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;entryX=-0.018;entryY=0.419;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=open;startFill=0;startSize=8;" parent="1" target="kla2jWYUcWB-ETQLTV-u-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="170" as="sourcePoint" />
+            <mxPoint x="420" y="246" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="180" y="367" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-43" value="Breach Waived/Remedied" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="kla2jWYUcWB-ETQLTV-u-42" vertex="1" connectable="0">
+          <mxGeometry x="-0.0872" relative="1" as="geometry">
+            <mxPoint x="100" y="14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-47" style="html=1;labelBackgroundColor=none;endArrow=none;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startFill=0;startArrow=open;startSize=8;entryX=1.001;entryY=0.34;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="kla2jWYUcWB-ETQLTV-u-56" target="kla2jWYUcWB-ETQLTV-u-9" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1156" y="573" as="sourcePoint" />
+            <mxPoint x="992" y="562" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1161" y="460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-48" value="Collateral Liquidated&amp;nbsp;&lt;div&gt;Does Not Covers Debt&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="kla2jWYUcWB-ETQLTV-u-47" vertex="1" connectable="0">
+          <mxGeometry x="-0.0872" relative="1" as="geometry">
+            <mxPoint x="-45" y="-16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-49" style="html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="646" y="240" as="sourcePoint" />
+            <mxPoint x="706" y="240" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="646" y="211" />
+              <mxPoint x="706" y="211" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-50" value="On-Time&lt;div&gt;Payments&lt;/div&gt;&lt;div&gt;Made&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="735" y="214" as="geometry" />
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-51" style="html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;entryX=0.592;entryY=1.05;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryPerimeter=0;" parent="1" source="kla2jWYUcWB-ETQLTV-u-30" target="kla2jWYUcWB-ETQLTV-u-11" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="746" y="269.5" as="sourcePoint" />
+            <mxPoint x="1336" y="269.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="797" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-53" value="Loan Paid&lt;div&gt;In Full&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="kla2jWYUcWB-ETQLTV-u-51" vertex="1" connectable="0">
+          <mxGeometry x="0.4465" y="1" relative="1" as="geometry">
+            <mxPoint x="30" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-54" style="html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;jumpStyle=arc;" parent="1" source="kla2jWYUcWB-ETQLTV-u-6" target="kla2jWYUcWB-ETQLTV-u-9" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="683" y="250" as="sourcePoint" />
+            <mxPoint x="917" y="367" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="503" y="372" />
+              <mxPoint x="683" y="372" />
+              <mxPoint x="800" y="372" />
+              <mxPoint x="800" y="470" />
+              <mxPoint x="840" y="470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-55" value="Breach Not&amp;nbsp;&lt;div&gt;Waived/Remedied&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="kla2jWYUcWB-ETQLTV-u-54" vertex="1" connectable="0">
+          <mxGeometry x="-0.0872" relative="1" as="geometry">
+            <mxPoint x="98" y="30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-56" value="Written Off" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#ffffc0;strokeColor=#ff0000;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" parent="1" vertex="1">
+          <mxGeometry x="1101" y="356" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-57" style="html=1;labelBackgroundColor=none;endArrow=none;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;startFill=0;startArrow=open;startSize=8;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="kla2jWYUcWB-ETQLTV-u-59" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1170.88" y="572.52" as="sourcePoint" />
+            <mxPoint x="986" y="480" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1161" y="562" />
+              <mxPoint x="1161" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-58" value="Collateral Liquidated Covers Debt" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="kla2jWYUcWB-ETQLTV-u-57" vertex="1" connectable="0">
+          <mxGeometry x="-0.0872" relative="1" as="geometry">
+            <mxPoint x="-58" y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-59" value="Recovered" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fillColor=#ffffc0;strokeColor=#ff0000;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" parent="1" vertex="1">
+          <mxGeometry x="1101" y="558" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-60" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" parent="1" vertex="1">
+          <mxGeometry x="1146" y="281" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-61" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" parent="1" vertex="1">
+          <mxGeometry x="1146" y="670" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-62" style="html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;entryX=0.5;entryY=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" parent="1" source="kla2jWYUcWB-ETQLTV-u-56" target="kla2jWYUcWB-ETQLTV-u-60" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="856" y="227" as="sourcePoint" />
+            <mxPoint x="936" y="227" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kla2jWYUcWB-ETQLTV-u-64" style="html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;entryX=0.5;entryY=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" parent="1" source="kla2jWYUcWB-ETQLTV-u-59" target="kla2jWYUcWB-ETQLTV-u-61" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1171" y="378" as="sourcePoint" />
+            <mxPoint x="1171" y="328" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="skwQIQeHKd-4c3idb-9n-1" style="html=1;labelBackgroundColor=none;endArrow=none;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;startArrow=open;startFill=0;startSize=8;exitX=0.006;exitY=0.181;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="kla2jWYUcWB-ETQLTV-u-30" target="kla2jWYUcWB-ETQLTV-u-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="180" as="sourcePoint" />
+            <mxPoint x="400" y="340" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="423" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="skwQIQeHKd-4c3idb-9n-2" value="Covenant Breach" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="skwQIQeHKd-4c3idb-9n-1" vertex="1" connectable="0">
+          <mxGeometry x="-0.0872" relative="1" as="geometry">
+            <mxPoint x="53" y="24" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="skwQIQeHKd-4c3idb-9n-3" style="html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;startArrow=none;startFill=0;startSize=8;endFill=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" parent="1" source="kla2jWYUcWB-ETQLTV-u-30" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="270" as="sourcePoint" />
+            <mxPoint x="440" y="340" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="440" y="285" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="skwQIQeHKd-4c3idb-9n-4" value="Breach Waived/Remedied" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="skwQIQeHKd-4c3idb-9n-3" vertex="1" connectable="0">
+          <mxGeometry x="-0.0872" relative="1" as="geometry">
+            <mxPoint x="19" y="-45" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="skwQIQeHKd-4c3idb-9n-5" style="html=1;labelBackgroundColor=none;endArrow=open;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;exitX=0.117;exitY=1;exitDx=0;exitDy=0;entryX=0.408;entryY=-0.017;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;jumpStyle=arc;" parent="1" source="kla2jWYUcWB-ETQLTV-u-30" target="kla2jWYUcWB-ETQLTV-u-10" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="179" as="sourcePoint" />
+            <mxPoint x="383" y="598" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="630" y="500" />
+              <mxPoint x="422" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="skwQIQeHKd-4c3idb-9n-8" value="Payment&lt;div&gt;Missed&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="skwQIQeHKd-4c3idb-9n-5" vertex="1" connectable="0">
+          <mxGeometry x="-0.5244" y="-2" relative="1" as="geometry">
+            <mxPoint x="-28" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="skwQIQeHKd-4c3idb-9n-9" style="html=1;labelBackgroundColor=none;endArrow=none;endSize=8;strokeColor=#ff0000;fontFamily=Verdana;fontSize=12;align=left;exitX=0.45;exitY=1.017;exitDx=0;exitDy=0;entryX=0.625;entryY=0.017;entryDx=0;entryDy=0;exitPerimeter=0;jumpStyle=arc;entryPerimeter=0;startFill=0;startArrow=open;startSize=8;" parent="1" source="kla2jWYUcWB-ETQLTV-u-30" target="kla2jWYUcWB-ETQLTV-u-10" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="310" as="sourcePoint" />
+            <mxPoint x="432" y="552" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="670" y="510" />
+              <mxPoint x="448" y="510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="skwQIQeHKd-4c3idb-9n-11" value="Paid&lt;div&gt;Within&lt;/div&gt;&lt;div&gt;Grace&amp;nbsp;&lt;/div&gt;&lt;div&gt;Period&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="skwQIQeHKd-4c3idb-9n-9" vertex="1" connectable="0">
+          <mxGeometry x="-0.5244" y="-2" relative="1" as="geometry">
+            <mxPoint x="-1" y="32" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
