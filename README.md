@@ -346,7 +346,7 @@ Once the conceptual class list has been pruned, the Domain Model is diagramed.  
 Note that to keep the Domain Model up to date with the Design Class Model, certain additional classes were added in (specifically the Treasury Report Processor, Journal Entry Processor, Invoice Processor, and Dashboard Manager classes), which are all Pure Fabrications. These classes add value to the Domain Model as they demonstrate how the users interact with the System.  On the other hand, the Simple Factory classes are shown in the Design Class Diagram, but intentionally omitted from Domain Model, as they serve no purpose in the problem domain and are purely implementation classes.  
 
 
-## Diagram
+## UML Domain Model Diagram
 
 ![Domain Model](/Images/Domain_Model.png)
 Please click on above image for a full size version
@@ -372,7 +372,7 @@ The above four classes (DashboardManager, JournalEntryProcessor, TreasuryReportP
 Interface Classes: The BankSoftwareGateway, EmailSystemGateway, CorpActSystGateway, and DatabaseAccess classes act as intermediaries between the System and external systems (or in the case of the DatabaseAccess class, the database).  They represent Pure Fabrications and Indirections.  You can read more about these design decisions in the [Design Patterns](#design-patterns) section.
 
 
-## Diagram
+## UML Class Diagram
 
 ![Class Diagram](/Images/Design_Class_Diagram.png)
 Please click on above image for a full size version
@@ -510,7 +510,7 @@ The Backend handles the business logic and security of the System.  It also serv
 The Database represents the main data store for the system, which will be an RDBMS, due to the highly structured nature of the System.  The Database will be described in more detail in the Cloud Deployment Diagram.  The Database Component interacts with all backend components via an interface to promote loose coupling between the components and the database. 
 
 
-## Diagram
+## UML Component Diagram
 
 ![Component Diagram](/Images/Component.png)
 Please click on above image for a full size version
@@ -550,7 +550,7 @@ Since all utilized AWS components integrate with AWS CloudWatch’s monitoring c
 The decision was made to utilize AWS Aurora Database, as the System’s highly structured data was a good candidate for a RDBMS.  AWS Aurora is fully managed and offers high availability, scaling, and performance *(Amazon Web Services, n.d.-d)*.  Additionally, a primary-replica setup is being used (utilizing the Data Replication design pattern), in which the primary database will continuously replicate any changes to the replica database.  Both regions will read from their individual databases, but all writes will be centralized with the primary database (in us-east-1, where most of the users reside).  In the event of an outage of the primary DB, Aurora will automatically promote the replica database to the new primary.
 
 
-## Diagram
+## AWS Cloud Deployment Diagram
 
 ![Cloud Deployment Diagram](/Images/AWS_Deployment.png)
 Please click on above image for a full size version
