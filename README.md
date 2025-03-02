@@ -9,8 +9,8 @@
 - [UML Use Case Diagram](#uml-use-case-diagram)
 - [UML Domain Model](#uml-domain-model)
 - [UML Class Diagram](#uml-class-diagram)
-- [Sequence Diagrams](#sequence-diagrams)
-- [State Diagram](#state-diagram)
+- [UML Sequence Diagrams](#uml-sequence-diagrams)
+- [UML State Diagram](#uml-state-diagram)
 - [Swimlane Diagram](#swimlane-diagram)
 - [UML Component Diagram](#uml-component-diagram)
 - [Cloud Deployment Diagram](#cloud-deployment-diagram)
@@ -377,7 +377,7 @@ Interface Classes: The BankSoftwareGateway, EmailSystemGateway, CorpActSystGatew
 ![Class Diagram](/Images/Design_Class_Diagram.png)
 Please click on above image for a full size version
 
-# Sequence Diagrams
+# UML Sequence Diagrams
 
 ## Sequence Diagram 1 - generateReport(List<selections>) from the Perform Accounting Procedures SSD
 
@@ -407,7 +407,7 @@ The below SD details a selection of methods from the Generate Cash Flow Data SSD
 ![SD Treasry](/Images/Sequence_Diagrams-Treasury.png)
 Please click on above image for a full size version
 
-# State Diagram
+# UML State Diagram
 
 ## Introduction
 
