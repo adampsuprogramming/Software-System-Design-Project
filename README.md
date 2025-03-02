@@ -324,7 +324,7 @@ Address (Shortened from Borrower Business Address), Amortization Line Item, Amor
 The following classes were pruned because they are not relevant as classes in the System or because they are not Primary or Supporting Actors:
 GAAP, Dodd-Frank Act, AML Policies, SEC, Loan Documentation, Consolidation Tree, Auditor, Regulatory, Management, Legal
 
-**Implementation Specific Classes**
+**Implementation Specific**
 
 The following classes represent processes that will occur and will be captured in the Banking, Reporting, Accounting, and Email Gateway classes:
 Banking System Transmission, Accounting System Transmission, Email System Transmission, Reporting System Transmission
