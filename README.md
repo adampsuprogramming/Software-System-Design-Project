@@ -165,7 +165,7 @@ The following are additional NFRs not covered in the above sections:
 
 In deciding which use cases are most relevant to the design of the System, potential use cases were evaluated and a selection of those which are critical to the desired business functionality, and which will have a substantial impact on design decisions were chosen *(Larman, 2005)*.  These use cases were also chosen because they involve primary user types of the System (the five primary actors depicted in the previous section).  By sampling functionality from each of those five actors, the major components and much of the primary desired functionality of the System were captured and documented.  Note that only a sampling of use case extensions was captured in the documentation of these use cases, due to the scope of this document.  
 
-The use cases listed were further illustrated through the documentation of System Sequence Diagrams (SSDs), which show interactions and treat the System as a black box.  These SSDs are useful in determining the inflows and outflows between the primary actors, the System, and any secondary actors that might be involved in the chosen use cases.  They are also helpful in developing Sequence Diagrams (SDs).
+The use cases listed were further illustrated through the documentation of System Sequence Diagrams (SSDs), which show interactions and treat the System as a black box.  These SSDs are useful in determining the inflows and outflows between the primary actors, the System, and any supporting actors that might be involved in the chosen use cases.  They are also helpful in developing Sequence Diagrams (SDs).
 
 ## Use Cases and System Sequence Diagrams
 
@@ -277,7 +277,7 @@ Please click on above image for a full size version
 
 ## Use Case Diagram Introduction
 
-Finally, the use case diagram was generated from the interactions elaborated in the above use cases and SSDs.  The use case diagrams show the primary actors interacting with the System via the use cases and the involvement of secondary actors.  Note that only the use cases below were included in the use case diagram.  While many more use cases would exist, their inclusion would be outside of the scope of this document. 
+Finally, the use case diagram was generated from the interactions elaborated in the above use cases and SSDs.  The use case diagrams show the primary actors interacting with the System via the use cases and the involvement of supporting actors.  Note that only the use cases below were included in the use case diagram.  While many more use cases would exist, their inclusion would be outside of the scope of this document. 
 
 ## Use Case Diagram
 
