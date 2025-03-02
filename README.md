@@ -1,8 +1,6 @@
-# Software System Design for TBD
+# Software System Design for a Commercial Mortgage Loan Accounting System
 
-## A Commercial Mortgage Loan Accounting System
-
-### Author: Adam Slager
+## Author: Adam Slager
 
 #### Date: March 1, 2025
 
