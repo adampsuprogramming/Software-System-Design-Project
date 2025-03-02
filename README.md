@@ -342,7 +342,7 @@ Monthly Interest (Redundant with Interest Due), Monthly Principal (Redundant wit
 ## Domain Model Creation
 Once the conceptual class list has been pruned, the Domain Model is diagramed.  Attributes are listed for the conceptual classes, associations and dependencies are drawn and multiplicity is added on both ends of the associations/dependencies.
 
-## Additional Notes
+### Additional Notes
 Note that to keep the Domain Model up to date with the Design Class Model, certain additional classes were added in (specifically the Treasury Report Processor, Journal Entry Processor, Invoice Processor, and Dashboard Manager classes), which are all Pure Fabrications. These classes add value to the Domain Model as they demonstrate how the users interact with the System.  On the other hand, the Simple Factory classes are shown in the Design Class Diagram, but intentionally omitted from Domain Model, as they serve no purpose in the problem domain and are purely implementation classes.  
 
 
