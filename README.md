@@ -11,7 +11,7 @@
 - [UML Class Diagram](#uml-class-diagram)
 - [UML Sequence Diagrams](#uml-sequence-diagrams)
 - [UML State Diagram](#uml-state-diagram)
-- [UML Activity Diagram - Swimlane Diagram](#uml-activity-diagram-swimlane-diagram)
+- [UML Activity Diagram - Swimlane Diagram](#uml-activity-diagram---swimlane-diagram)
 - [UML Component Diagram](#uml-component-diagram)
 - [Cloud Deployment Diagram](#cloud-deployment-diagram)
 - [Skeleton Classes and Tables Definition](#skeleton-classes-and-tables-definition)
