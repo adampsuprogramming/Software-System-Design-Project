@@ -428,7 +428,7 @@ From the **Foreclosed** state, the lender will try to exercise any remedies (typ
 ![State Diagram](/Images/State_Machine.png)
 Please click on above image for a full size version
 
-# Swimlane Diagram
+# UML Activity Diagram - Swimlane Diagram
 
 ## Introduction
 
