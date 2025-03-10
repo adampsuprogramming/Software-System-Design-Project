@@ -1,6 +1,6 @@
 # Software System Design for a Commercial Mortgage Loan Accounting System
 
-## Author: Adam Slager
+## Author: Adam S
 
 #### Date: March 2, 2025
 
